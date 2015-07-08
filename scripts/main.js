@@ -38,7 +38,7 @@ UserText.innerHTML = "Welcome, " + myName;
 
 
 myButton.addEventListener('click', function(){
-    setUserName()
+    setUserName();
 }, false);
 deleteuserbutton.addEventListener('click', function(){
      localstorage.deleteItem("name");
