@@ -35,16 +35,20 @@ var myName = prompt('Please enter your name.');
 localStorage.setItem('name', myName)
 UserText.innerHTML = "Welcome, " + myName;
 }
+var deleteUserName = function(){
+localStorage.setItem('name', myName)
+UserText.innerHTML = "Welcome, " + myName;
+}
 
 
 myButton.addEventListener('click', function(){
-    setUserName();
+    localstorage.deleteItem("name");
+ UserText.innerHTML = "Welcome";
+ $('#deleteuser').hide();
 }, false);
 
 document.getElementById('deleteuser').addEventListener('click', function(){
-     localstorage.deleteItem("name");
- UserText.innerHTML = "Welcome";
- $('#deleteuser').hide();
+     deleteUserName();
 }, false);
 });
 
