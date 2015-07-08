@@ -36,15 +36,14 @@ localStorage.setItem('name', myName)
 UserText.innerHTML = "Welcome, " + myName;
 }
 var deleteUserName = function(){
-localStorage.setItem('name', myName)
-UserText.innerHTML = "Welcome, " + myName;
+localstorage.deleteItem("name");
+ UserText.innerHTML = "Welcome";
+ $('#deleteuser').hide();
 }
 
 
 myButton.addEventListener('click', function(){
-    localstorage.deleteItem("name");
- UserText.innerHTML = "Welcome";
- $('#deleteuser').hide();
+    setUserName();
 }, false);
 
 document.getElementById('deleteuser').addEventListener('click', function(){
