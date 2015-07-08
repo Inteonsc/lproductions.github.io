@@ -25,7 +25,7 @@ setInterval(function() {
 if(localStorage.getItem('name')) {
   var storedName = localStorage.getItem('name');
   UserText.innerHTML = "Welcome,&nbsp;" + storedName;
-  $('#deleteuser').hide();
+  $('#deleteuser').show();
 }else{
 	$('#deleteuser').hide();
 }
@@ -43,6 +43,7 @@ deleteuserbutton.addEventListener('click', function(){
 myButton.addEventListener('click', function(){
      localstorage.deleteItem('name');
  UserText.innerHTML = "Welcome";
+ $('#deleteuser').hide();
 }, false);
 });
 
