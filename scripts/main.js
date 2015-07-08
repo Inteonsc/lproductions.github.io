@@ -40,7 +40,8 @@ UserText.innerHTML = "Welcome, " + myName;
 myButton.addEventListener('click', function(){
     setUserName();
 }, false);
-deleteuserbutton.addEventListener('click', function(){
+
+document.getElementById('deleteuser').addEventListener('click', function(){
      localstorage.deleteItem("name");
  UserText.innerHTML = "Welcome";
  $('#deleteuser').hide();
