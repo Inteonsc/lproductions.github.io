@@ -78,7 +78,7 @@ white-space: nowrap ;
 	
 }
 
-#topbar > a{
+.topbar > a{
 	float:left;
  	border: 5px solid black;
  	padding: 5px;
