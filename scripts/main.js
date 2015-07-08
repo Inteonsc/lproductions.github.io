@@ -15,7 +15,8 @@ setInterval(function() {
     .appendTo('#slideshow');
 },  7000);
 	UserText = document.querySelector('#usermessage');
-		 myButton = document.querySelector('button');
+		 myButton = document.querySelector('#nameuser');
+		 deleteuserbutton = document.querySelector('#deleteuser');
 		
 
 
@@ -34,6 +35,9 @@ UserText.innerHTML = "Welcome, " + myName;
 
 myButton.onclick = function() {
  setUserName()
+}
+deleteuserbutton.onclick = function() {
+ localstorage.deleteItem('name');
 }
 });
 
