@@ -36,9 +36,9 @@ localStorage.setItem('name', myName)
 UserText.innerHTML = "Welcome, " + myName;
 }
 var deleteUserName = function(){
-localstorage.deleteItem("name");
+//localstorage.deleteItem("name");
  UserText.innerHTML = "Welcome";
- $('#deleteuser').hide();
+ //$('#deleteuser').hide();
 }
 
 
