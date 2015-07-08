@@ -82,4 +82,5 @@ white-space: nowrap ;
 	float:left;
  	border: 5px solid black;
  	padding: 5px;
+ 	margin: 0 auto;
 }
