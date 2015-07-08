@@ -41,6 +41,7 @@ myButton.onclick = function() {
 }
 deleteuserbutton.onclick = function() {
  localstorage.deleteItem('name');
+ UserText.innerHTML = "Welcome";
 }
 });
 
