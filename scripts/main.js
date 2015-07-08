@@ -35,14 +35,14 @@ var myName = prompt('Please enter your name.');
 localStorage.setItem('name', myName)
 UserText.innerHTML = "Welcome, " + myName;
 $('#deleteuser').show();
-myButton.InnerHTML = "Change User";
+myButton.innerHTML = "Change User";
 }
 
 var deleteUserName = function(){
 localStorage.removeItem('name');
  UserText.innerHTML = "Welcome";
  $('#deleteuser').hide();
- myButton.InnerHTML = "Add User";
+ myButton.innerHTML = "Add User";
 }
 
 
