@@ -36,13 +36,14 @@ localStorage.setItem('name', myName)
 UserText.innerHTML = "Welcome, " + myName;
 }
 
-myButton.onclick = function() {
- setUserName()
-}
-deleteuserbutton.onclick = function() {
- localstorage.deleteItem('name');
+
+deleteuserbutton.addEventListener('click', function(){
+    setUserName()
+}, false);
+myButton.addEventListener('click', function(){
+     localstorage.deleteItem('name');
  UserText.innerHTML = "Welcome";
-}
+}, false);
 });
 
 
