@@ -38,7 +38,7 @@ $('#deleteuser').show();
 }
 
 var deleteUserName = function(){
-//localstorage.deleteItem("name");
+localstorage.removeItem("name");
  UserText.innerHTML = "Welcome";
  $('#deleteuser').hide();
 }
