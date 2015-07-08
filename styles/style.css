@@ -80,5 +80,5 @@ white-space: nowrap ;
 
 #topbar > a{
 	float:left;
-}
+ border: 5px solid black;
 }
