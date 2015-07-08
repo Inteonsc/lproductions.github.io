@@ -26,6 +26,7 @@ if(localStorage.getItem('name')) {
   var storedName = localStorage.getItem('name');
   UserText.innerHTML = "Welcome,&nbsp;" + storedName;
   $('#deleteuser').show();
+  myButton.innerHTML = "Change User";
 }else{
 	$('#deleteuser').hide();
 }
