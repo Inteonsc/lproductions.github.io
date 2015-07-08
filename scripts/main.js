@@ -41,7 +41,7 @@ myButton.addEventListener('click', function(){
     setUserName()
 }, false);
 deleteuserbutton.addEventListener('click', function(){
-     localstorage.deleteItem('name');
+     localstorage.deleteItem("name");
  UserText.innerHTML = "Welcome";
  $('#deleteuser').hide();
 }, false);
