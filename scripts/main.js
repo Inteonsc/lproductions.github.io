@@ -25,7 +25,7 @@ setInterval(function() {
 if(localStorage.getItem('name')) {
   var storedName = localStorage.getItem('name');
   UserText.innerHTML = "Welcome,&nbsp;" + storedName;
-  $('#deleteuser').show();
+  $('#deleteuser').hide();
 }else{
 	$('#deleteuser').hide();
 }
