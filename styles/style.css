@@ -80,8 +80,14 @@ white-space: nowrap ;
 
 .topbar > a{
 	float:left;
- 	border-right: 3px solid black;
+ 	border-right: 1px solid black;
  	padding: 10px 10px 10px 10px;
  	margin: 0 auto;
  	  background-color: #FF9500;
+}
+.topbar{
+height:34px;
+width:100%;
+margin: 0 auto;
+background-color: #FF9500;
 }
