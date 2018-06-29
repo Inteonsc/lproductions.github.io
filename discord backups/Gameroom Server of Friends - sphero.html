@@ -1,0 +1,1722 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gameroom Server of Friends - sphero</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/269812107355226122/fa80a5cd7dd53eeff51f38b6135d020f.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Gameroom Server of Friends</div>
+<div class="channel-name">sphero</div>
+<div class="misc">256 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">17-Jan-18 04:49 PM</span>
+<div class="msg-content">
+everyone in our group for geek should have accuess to this</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">17-Jan-18 04:49 PM</span>
+<div class="msg-content">
+yee</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/104917819182845952/21aa60f1a619d2a791c298280f9991c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Rikty-rakt#9807">Rikty-rakt</span>
+<span class="msg-date">19-Jan-18 03:34 PM</span>
+<div class="msg-content">
+yup</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">19-Jan-18 03:35 PM</span>
+<div class="msg-content">
+indeedy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Jan-18 03:35 PM</span>
+<div class="msg-content">
+we shall make an obstacle course</div>
+<div class="msg-content">
+maybe we should make some designs</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">19-Jan-18 03:35 PM</span>
+<div class="msg-content">
+and it may or may not be happening</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/104917819182845952/21aa60f1a619d2a791c298280f9991c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Rikty-rakt#9807">Rikty-rakt</span>
+<span class="msg-date">19-Jan-18 03:35 PM</span>
+<div class="msg-content">
+FOR TYPING</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">19-Jan-18 03:36 PM</span>
+<div class="msg-content">
+typing is good for our health</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Jan-18 03:36 PM</span>
+<div class="msg-content">
+exercise</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-18 02:53 PM</span>
+<div class="msg-content">
+so we may need to design a course for this</div>
+<div class="msg-content">
+me and wesley had two ideas</div>
+<div class="msg-content">
+one was to have a loop de loop</div>
+<div class="msg-content">
+and another was to base its speed of the nearby volume</div>
+<div class="msg-content">
+so that the kids can interact and try and shout to get it to go faster</div>
+<div class="msg-content">
+this would most likely entertain the kids if they are like under 12</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">24-Jan-18 05:14 PM</span>
+<div class="msg-content">
+interesting</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Jan-18 05:18 PM</span>
+<div class="msg-content">
+indeedy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-18 05:22 PM</span>
+<div class="msg-content">
+just saw</div>
+<div class="msg-content">
+it looks like scratch</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Jan-18 05:22 PM</span>
+<div class="msg-content">
+jayke has one</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-18 05:23 PM</span>
+<div class="msg-content">
+but actually nicely done instead of being horrible like appinventor</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Jan-18 05:23 PM</span>
+<div class="msg-content">
+jayke knows how it works</div>
+<div class="msg-content">
+oh jayke &quot;CLAP CLAP&quot;</div>
+<div class="msg-content">
+huh thats not summoning him</div>
+<div class="msg-content">
+maybe <span class="mention" title="whitstableboy#8524">@whitstableboy</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-18 05:25 PM</span>
+<div class="msg-content">
+<a href="https://sphero.docsapp.io/docs/12-advanced-concepts">https://sphero.docsapp.io/docs/12-advanced-concepts</a></div>
+<div class="msg-content">
+has some stuff</div>
+<div class="msg-content">
+&quot;advanced concepts&quot;</div>
+<div class="msg-content">
+like string concatenation</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Jan-18 05:25 PM</span>
+<div class="msg-content">
+we got a laim. its fine</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-18 05:25 PM</span>
+<div class="msg-content">
+which is simply putting a + inbetween two strings</div>
+<div class="msg-content">
+it looks like we can get</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Jan-18 05:25 PM</span>
+<div class="msg-content">
+we have 2 guys with tech expert role. sherpo dosent stand a chance</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-18 05:27 PM</span>
+<div class="msg-content">
+the speed, heading(there is a blue tail light. that is 180 degrees and shows the back etc. 0 degrees would be the front. it shows what way its going.), orientation(yaw, pitch and roll), gyroscop(speed of rotation on one of the orientations), accelaration measured in Gs, Vertical accerleration, velocity, location</div>
+<div class="msg-content">
+thats what our sensors are</div>
+<div class="msg-content">
+we can move it</div>
+<div class="msg-content">
+turn on lights</div>
+<div class="msg-content">
+and play sounds</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Jan-18 05:28 PM</span>
+<div class="msg-content">
+nice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-18 05:28 PM</span>
+<div class="msg-content">
+theres a few events we can use</div>
+<div class="msg-content">
+on not charging(this activates when it is or isn&#39;t charging, there are multiple events for this)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Jan-18 05:28 PM</span>
+<div class="msg-content">
+self destuct?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-18 05:28 PM</span>
+<div class="msg-content">
+on gyro max. this is when it is at max gyro speed</div>
+<div class="msg-content">
+these are events</div>
+<div class="msg-content">
+so once something happens</div>
+<div class="msg-content">
+we can get it to do stuff</div>
+<div class="msg-content">
+theres also</div>
+<div class="msg-content">
+on land</div>
+<div class="msg-content">
+on freefall(THIS ONE will be really interesting)</div>
+<div class="msg-content">
+and on collision</div>
+<div class="msg-content">
+<span class="mention">@here</span></div>
+<div class="msg-content">
+thats what we can do</div>
+<div class="msg-content">
+i suggest that if we can add our own sounds</div>
+<div class="msg-content">
+to add a wilheim scream everytime it goes into freefall</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Jan-18 05:30 PM</span>
+<div class="msg-content">
+yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-18 05:32 PM</span>
+<div class="msg-content">
+heres a list of all the sounds included</div>
+<div class="msg-content">
+<a href="https://soundcloud.com/user-710141033/sets/programming-sounds">https://soundcloud.com/user-710141033/sets/programming-sounds</a></div>
+<div class="msg-content">
+Pinned a message.</div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=hek4uEJ7WLw&amp;list=PLoFl_AIESK58RADphzUqNfOCIc6EoiAsF&amp;index=1">https://www.youtube.com/watch?v=hek4uEJ7WLw&amp;list=PLoFl_AIESK58RADphzUqNfOCIc6EoiAsF&amp;index=1</a></div>
+<div class="msg-content">
+interesting idea</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Jan-18 05:40 PM</span>
+<div class="msg-content">
+wellcome to the laim show</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-18 05:40 PM</span>
+<div class="msg-content">
+my camera only has 15 second exposure so would need something else</div>
+<div class="msg-content">
+huh</div>
+<div class="msg-content">
+we can also simulate planets</div>
+<div class="msg-content">
+because they can rotate and move at the same time</div>
+<div class="msg-content">
+think the lastest sphero is roughly 4-5MPH max</div>
+<div class="msg-content">
+that may</div>
+<div class="msg-content">
+just may be able to do a small loop the loop</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Jan-18 05:48 PM</span>
+<div class="msg-content">
+idea good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-18 05:51 PM</span>
+<div class="msg-content">
+for a golf ball</div>
+<div class="msg-content">
+if the loop is 20m radius</div>
+<div class="msg-content">
+it would need to be 31 miles per hour</div>
+<div class="msg-content">
+i think we may need a small loop</div>
+<div class="msg-content">
+hmm</div>
+<div class="msg-content">
+i have no idea whether this is correct or not</div>
+<div class="msg-content">
+but i think its 50% of the required speed to do a 1 meter radius loop</div>
+<div class="msg-content">
+probably about 80% for a 0.5 meter radius loop</div>
+<div class="msg-content">
+ok yea unless we roll it down a slope first i doubt we cna do a loop de loop</div>
+<div class="msg-content">
+it needs to go about 1m/s faster for a 20cm radius</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">25-Jan-18 01:54 PM</span>
+<div class="msg-content">
+<span class="mention" title="whitstableboy#8524">@whitstableboy</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187264198881968129/86b45002181bed985019f8dfd7cfcdc3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="whitstableboy#8524">whitstableboy</span>
+<span class="msg-date">25-Jan-18 01:54 PM</span>
+<div class="msg-content">
+yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">25-Jan-18 01:54 PM</span>
+<div class="msg-content">
+Meeting started</div>
+<div class="msg-content">
+I guess we can do voice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187264198881968129/86b45002181bed985019f8dfd7cfcdc3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="whitstableboy#8524">whitstableboy</span>
+<span class="msg-date">25-Jan-18 01:55 PM</span>
+<div class="msg-content">
+you can just tell me what going on</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">25-Jan-18 06:15 PM</span>
+<div class="msg-content">
+well more than that happened</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">26-Jan-18 12:54 PM</span>
+<div class="msg-content">
+asked lesley</div>
+<div class="msg-content">
+this is the informaton i believe</div>
+<div class="msg-content">
+:</div>
+<div class="msg-content">
+we are doing the main geek event. don&#39;t think we are doing the kids thing but we may still be doing it</div>
+<div class="msg-content">
+if we do do the kid thing</div>
+<div class="msg-content">
+they will be around 12-13 roughly</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187264198881968129/86b45002181bed985019f8dfd7cfcdc3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="whitstableboy#8524">whitstableboy</span>
+<span class="msg-date">26-Jan-18 12:56 PM</span>
+<div class="msg-content">
+ok thanks for the update</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">26-Jan-18 12:56 PM</span>
+<div class="msg-content">
+np</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">29-Jan-18 01:21 PM</span>
+<div class="msg-content">
+oh forgto to say</div>
+<div class="msg-content">
+spoke to lelsey</div>
+<div class="msg-content">
+jake is with us</div>
+<div class="msg-content">
+we are doing actual geek</div>
+<div class="msg-content">
+we are still doing the spearo</div>
+<div class="msg-content">
+it jsut hasnt been devlivered</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/104917819182845952/21aa60f1a619d2a791c298280f9991c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Rikty-rakt#9807">Rikty-rakt</span>
+<span class="msg-date">29-Jan-18 05:03 PM</span>
+<div class="msg-content">
+awesome</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">29-Jan-18 05:03 PM</span>
+<div class="msg-content">
+your wellcome</div>
+<div class="msg-content">
+nice for wes to reply when i put stuff ( stares into the souls of the others )</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/104917819182845952/21aa60f1a619d2a791c298280f9991c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Rikty-rakt#9807">Rikty-rakt</span>
+<span class="msg-date">29-Jan-18 05:04 PM</span>
+<div class="msg-content">
+Search up some quick ideas for a sphero race/activity track thing here the first one</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/403186043429584906/407581904699785216/maxresdefault.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/403186043429584906/407581904699785216/maxresdefault.png" />
+</a>
+</div>
+<div class="msg-content">
+second</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/403186043429584906/407581960777498624/9k.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/403186043429584906/407581960777498624/9k.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">29-Jan-18 05:06 PM</span>
+<div class="msg-content">
+nice. but rember we have a bugdet of -&#163;0.00</div>
+<div class="msg-content">
+if we cant made it with what we can find</div>
+<div class="msg-content">
+rip us</div>
+<div class="msg-content">
+i have some cardboard in the garra we can use</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/104917819182845952/21aa60f1a619d2a791c298280f9991c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Rikty-rakt#9807">Rikty-rakt</span>
+<span class="msg-date">29-Jan-18 05:06 PM</span>
+<div class="msg-content">
+last, and yes i know hence why i said idea. meant to be used to inspire</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/403186043429584906/407582348054495262/article-2591615-1CA5CE0C00000578-892_634x313.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/403186043429584906/407582348054495262/article-2591615-1CA5CE0C00000578-892_634x313.png" />
+</a>
+</div>
+<div class="msg-content">
+-has plenty of cardboard boxes-</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/351092147954515979/852c1dab0f6f97fdd3802e9e550e8abe.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ATrampWithASock#9585">ATrampWithASock</span>
+<span class="msg-date">29-Jan-18 05:07 PM</span>
+<div class="msg-content">
+It is very inspiring, my morale is high and my spirits higher</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">29-Jan-18 05:07 PM</span>
+<div class="msg-content">
+rember we have basicly a table of set up ( im trying to bribe the guy in charge of room planning to give us a large area )</div>
+<div class="msg-content">
+Toby Echozap - Today at 5:08 PM<br />hay room planner<br />give us lots of room for geek<br />NEW MESSAGES<br />person whos name wont be relived becuase reasons- Today at 5:10 PM<br />ok</div>
+<div class="msg-content">
+bribe accepted</div>
+<div class="msg-content">
+we can also meet tomorrow those of us who are in to chat more</div>
+<div class="msg-content">
+i will drag jayke kicking and screaming</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/351092147954515979/852c1dab0f6f97fdd3802e9e550e8abe.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ATrampWithASock#9585">ATrampWithASock</span>
+<span class="msg-date">29-Jan-18 05:57 PM</span>
+<div class="msg-content">
+Sounds dandy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">29-Jan-18 06:41 PM</span>
+<div class="msg-content">
+indeed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">30-Jan-18 02:07 PM</span>
+<div class="msg-content">
+<span class="mention" title="ATrampWithASock#9585">@ATrampWithASock</span> you are takeaway delivery ive</div>
+<div class="msg-content">
+Driver</div>
+<div class="msg-content">
+Nearby McDonald&#39;s KFC subway</div>
+<div class="msg-content">
+Charge delivery cost</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">30-Jan-18 02:09 PM</span>
+<div class="msg-content">
+what are you talking about?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">30-Jan-18 02:09 PM</span>
+<div class="msg-content">
+Nearby fast foods</div>
+<div class="msg-content">
+We will send make in a car</div>
+<div class="msg-content">
+To buy stuff</div>
+<div class="msg-content">
+Charge extra</div>
+<div class="msg-content">
+Make a profit</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187264198881968129/86b45002181bed985019f8dfd7cfcdc3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="whitstableboy#8524">whitstableboy</span>
+<span class="msg-date">31-Jan-18 02:34 PM</span>
+<div class="msg-content">
+heres the work experience log if any one wants it</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/403186043429584906/408268896857227304/Work_Experience_Log.docx">
+Attachment: Work_Experience_Log.docx (43.6 KB)
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">31-Jan-18 02:35 PM</span>
+<div class="msg-content">
+thanks</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">01-Feb-18 07:56 PM</span>
+<div class="msg-content">
+possible we are going to umm the one on wednesday and thursday as well</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/351092147954515979/852c1dab0f6f97fdd3802e9e550e8abe.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ATrampWithASock#9585">ATrampWithASock</span>
+<span class="msg-date">03-Feb-18 04:40 PM</span>
+<div class="msg-content">
+When am i doing this?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">03-Feb-18 04:40 PM</span>
+<div class="msg-content">
+we are doing at least the thursday friday and saturday</div>
+<div class="msg-content">
+and the wednesday tursday of next week if we can make it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/351092147954515979/852c1dab0f6f97fdd3802e9e550e8abe.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ATrampWithASock#9585">ATrampWithASock</span>
+<span class="msg-date">03-Feb-18 04:41 PM</span>
+<div class="msg-content">
+Alright then</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">04-Feb-18 02:34 PM</span>
+<div class="msg-content">
+Kaboom. A MakeyMakey lad has infiltrated your chat......because George wants me to share our schedule for next week. Hi.</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/403186043429584906/409718352051961867/GEEK_LAB.docx">
+Attachment: GEEK_LAB.docx (16.6 KB)
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187264198881968129/86b45002181bed985019f8dfd7cfcdc3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="whitstableboy#8524">whitstableboy</span>
+<span class="msg-date">04-Feb-18 02:35 PM</span>
+<div class="msg-content">
+the normal sphero app will work with iphones that are running IOS 6.0 or latter and for android its 4.0 or latter</div>
+<div class="msg-content">
+the programing app (Sphero Edu) will work will IOS 9.0 or latter and android 4.4 and up</div>
+<div class="msg-content">
+it would help if poeple could get these on there phones just in case <span class="mention" title="Inteon#7976">@Inteon</span> <span class="mention" title="Toby Echozap#3346">@Toby Echozap</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">04-Feb-18 02:40 PM</span>
+<div class="msg-content">
+lol</div>
+<div class="msg-content">
+tagging george to put something on his phone</div>
+<div class="msg-content">
+nice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187264198881968129/86b45002181bed985019f8dfd7cfcdc3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="whitstableboy#8524">whitstableboy</span>
+<span class="msg-date">04-Feb-18 02:40 PM</span>
+<div class="msg-content">
+&#128515;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">04-Feb-18 02:42 PM</span>
+<div class="msg-content">
+so we finish at 3pm?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187264198881968129/86b45002181bed985019f8dfd7cfcdc3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="whitstableboy#8524">whitstableboy</span>
+<span class="msg-date">04-Feb-18 02:43 PM</span>
+<div class="msg-content">
+not sure ask george</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">04-Feb-18 02:50 PM</span>
+<div class="msg-content">
+yes</div>
+<div class="msg-content">
+what marcus put is whats hapening</div>
+<div class="msg-content">
+and why jayke</div>
+<div class="msg-content">
+you fool</div>
+<div class="msg-content">
+ask jake or wes or noah or will. literly anyone else but me for phone stuff</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">07-Feb-18 09:21 AM</span>
+<div class="msg-content">
+Where do we meet up</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">07-Feb-18 12:40 PM</span>
+<div class="msg-content">
+so</div>
+<div class="msg-content">
+people who weren&#39;t there today</div>
+<div class="msg-content">
+<span class="mention" title="Rythm#3722">@Rythm</span> <span class="mention" title="ATrampWithASock#9585">@ATrampWithASock</span> <span class="mention" title="Rikty-rakt#9807">@Rikty-rakt</span></div>
+<div class="msg-content">
+lots of stuff</div>
+<div class="msg-content">
+we finish at 12 tommorow</div>
+<div class="msg-content">
+the normal sphero app is good</div>
+<div class="msg-content">
+we get 12 spheros and this small table</div>
+<div class="msg-content">
+its recommended we use 6</div>
+<div class="msg-content">
+and then use the other 6 once they die</div>
+<div class="msg-content">
+you can control it via your phone etc</div>
+<div class="msg-content">
+the normal app allows you to level them up and do tricks</div>
+<div class="msg-content">
+for example there is this nutcracker dance they can do</div>
+<div class="msg-content">
+and its cool when you line up 3 and do it at the same time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">07-Feb-18 01:55 PM</span>
+<div class="msg-content">
+rythem is a music bot</div>
+<div class="msg-content">
+you fool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">07-Feb-18 01:59 PM</span>
+<div class="msg-content">
+&#128539;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">07-Feb-18 02:56 PM</span>
+<div class="msg-content">
+we will make sure phones are charged</div>
+<div class="msg-content">
+we may get something tomorrow to help controler wise</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/104917819182845952/21aa60f1a619d2a791c298280f9991c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Rikty-rakt#9807">Rikty-rakt</span>
+<span class="msg-date">07-Feb-18 03:03 PM</span>
+<div class="msg-content">
+okay got it thanks for the update</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">07-Feb-18 03:03 PM</span>
+<div class="msg-content">
+yw</div>
+<div class="msg-content">
+oh and we need cardboard</div>
+<div class="msg-content">
+defently need cardboard</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/104917819182845952/21aa60f1a619d2a791c298280f9991c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Rikty-rakt#9807">Rikty-rakt</span>
+<span class="msg-date">07-Feb-18 03:14 PM</span>
+<div class="msg-content">
+so just to make sure it from 9-12?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">07-Feb-18 03:14 PM</span>
+<div class="msg-content">
+9 till 12</div>
+<div class="msg-content">
+inless its changed last minute again</div>
+<div class="msg-content">
+no changes to main geek</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">07-Feb-18 03:15 PM</span>
+<div class="msg-content">
+yea jenny was told it was that yesterday at midnight....</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">07-Feb-18 03:15 PM</span>
+<div class="msg-content">
+she didnt seem happy about it</div>
+<div class="msg-content">
+angerist ive ever seen her</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/351092147954515979/852c1dab0f6f97fdd3802e9e550e8abe.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ATrampWithASock#9585">ATrampWithASock</span>
+<span class="msg-date">08-Feb-18 12:36 AM</span>
+<div class="msg-content">
+Awesome thanks guys</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">08-Feb-18 01:13 PM</span>
+<div class="msg-content">
+one idea that i had was that once we had less people</div>
+<div class="msg-content">
+when we had 4-5 people there</div>
+<div class="msg-content">
+1 or 2 should be dedicated to security</div>
+<div class="msg-content">
+to make sure things don&#39;t get stolen<span class="msg-edited" title="08-Feb-18 01:14 PM">(edited)</span></div>
+<div class="msg-content">
+that allows the other 3 to help the 3 people on the spheros and talk to others</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">08-Feb-18 01:15 PM</span>
+<div class="msg-content">
+we are defently going to have to keep an eye on it more when actual geek is happening</div>
+<div class="msg-content">
+we will see if we can move the table closer to seating areas</div>
+<div class="msg-content">
+becuase currently we are all hiding behind it andanyone can just steal stuff</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">08-Feb-18 01:16 PM</span>
+<div class="msg-content">
+have the person on security wander about</div>
+<div class="msg-content">
+pretend to not be with us maybe</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">08-Feb-18 01:17 PM</span>
+<div class="msg-content">
+dont think pretending not to be with us will help</div>
+<div class="msg-content">
+if the people dispalyinf are going around they know we are keeping an eye on them and will be less likely to try</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">13-Feb-18 02:13 PM</span>
+<div class="msg-content">
+More deets</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/403186043429584906/412974536288501761/20180212_181826.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/403186043429584906/412974536288501761/20180212_181826.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">13-Feb-18 02:13 PM</span>
+<div class="msg-content">
+thank you marcus</div>
+<div class="msg-content">
+you get to test the sherpo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">13-Feb-18 02:17 PM</span>
+<div class="msg-content">
+Yaay</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">14-Feb-18 01:10 PM</span>
+<div class="msg-content">
+does anyone know whats happening about the theortical maze</div>
+<div class="msg-content">
+also i may be able to bring some of these</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/403186043429584906/413321152342130708/DSC4659sbb.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/403186043429584906/413321152342130708/DSC4659sbb.png" />
+</a>
+</div>
+<div class="msg-content">
+they may be good for walls etc.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">14-Feb-18 04:59 PM</span>
+<div class="msg-content">
+oh thats a photo</div>
+<div class="msg-content">
+yer sure</div>
+<div class="msg-content">
+bring it</div>
+<div class="msg-content">
+all</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">14-Feb-18 04:59 PM</span>
+<div class="msg-content">
+yea the ones i have are basically the same</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">14-Feb-18 05:00 PM</span>
+<div class="msg-content">
+sure</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">14-Feb-18 05:00 PM</span>
+<div class="msg-content">
+so does anybody know whats happening with the maze?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">14-Feb-18 05:00 PM</span>
+<div class="msg-content">
+maze is ..... if we have time i think. we may not. we may be too busy to change it over. id have some boxe ready for it</div>
+<div class="msg-content">
+but dont be stressedif it dosent happen</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187264198881968129/86b45002181bed985019f8dfd7cfcdc3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="whitstableboy#8524">whitstableboy</span>
+<span class="msg-date">14-Feb-18 05:02 PM</span>
+<div class="msg-content">
+i do have lots of card (from a big box) but you would have to cut it to make it into something useful<span class="msg-edited" title="14-Feb-18 05:02 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">14-Feb-18 05:02 PM</span>
+<div class="msg-content">
+good</div>
+<div class="msg-content">
+we can put laims boxes in there</div>
+<div class="msg-content">
+and use it for transport</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">14-Feb-18 05:02 PM</span>
+<div class="msg-content">
+i remembered that i have a ton of cardboard</div>
+<div class="msg-content">
+its just whether i am allowed to use it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">14-Feb-18 05:03 PM</span>
+<div class="msg-content">
+take it in the miss noahmobile</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">14-Feb-18 05:03 PM</span>
+<div class="msg-content">
+(since my mum and dad may actually need it to store fabric on)</div>
+<div class="msg-content">
+or whether its spare or not</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">14-Feb-18 05:03 PM</span>
+<div class="msg-content">
+if you cant take it laim thats fine</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">14-Feb-18 05:10 PM</span>
+<div class="msg-content">
+yea got 11 of them + a big box holding them which i can take</div>
+<div class="msg-content">
+just they are  a little damp</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">14-Feb-18 05:11 PM</span>
+<div class="msg-content">
+why did you leave them out in the rain</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">14-Feb-18 05:11 PM</span>
+<div class="msg-content">
+because they were going to be thrown away</div>
+<div class="msg-content">
+but they haven&#39;t been out for long</div>
+<div class="msg-content">
+they are mainly fine</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">14-Feb-18 05:13 PM</span>
+<div class="msg-content">
+So this isn&#39;t gonna be feasible for tomorrow but I&#39;m just wondering in a general sense...do you think combining MakeyMakey and Sphero is a possible thing? Maybe if you make basic software for Sphero racing and you use tinfoil to detect them, which the MakeyMakey inputs into the software.</div>
+<div class="msg-content">
+&#129300;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">14-Feb-18 05:14 PM</span>
+<div class="msg-content">
+possible but impossible time wise. it was something i considered however we didnt get them till the day. plus the kids like playing with them</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">14-Feb-18 05:15 PM</span>
+<div class="msg-content">
+Yeah this is just me thinking. It wouldn&#39;t be done for GEEK.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">14-Feb-18 05:15 PM</span>
+<div class="msg-content">
+indeed</div>
+<div class="msg-content">
+but we dont own them</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">14-Feb-18 05:15 PM</span>
+<div class="msg-content">
+I have my own MakeyMakey kit now, at least</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">14-Feb-18 06:46 PM</span>
+<div class="msg-content">
+i don&#39;t think it will be possible until sphero works on a PC</div>
+<div class="msg-content">
+then we would have to make macros and everything depending on how it works</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">14-Feb-18 06:48 PM</span>
+<div class="msg-content">
+nah you could still use the phone for sphero</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">14-Feb-18 06:48 PM</span>
+<div class="msg-content">
+yea but how would you coneect a phone to makey makey?</div>
+<div class="msg-content">
+nvm</div>
+<div class="msg-content">
+turns out someone has made it xD</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">14-Feb-18 06:49 PM</span>
+<div class="msg-content">
+nahhhh</div>
+<div class="msg-content">
+lemme draw it</div>
+<div class="msg-content">
+1. Control Sphero as normal<br />2. Sphero touches the aluminum foil finish line<br />3. Input is detected on MakeyMakey (space bar, probably)<br />4. Timer Laps/Stops</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/403186043429584906/413408108379897856/unknown.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/403186043429584906/413408108379897856/unknown.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">14-Feb-18 07:10 PM</span>
+<div class="msg-content">
+ohhhhhhhhhhh</div>
+<div class="msg-content">
+i thought you meant controlling it with sphero</div>
+<div class="msg-content">
+yea that would possibly be quite easy to do</div>
+<div class="msg-content">
+we have like 4 hours of set up at college</div>
+<div class="msg-content">
+so we may be able to do something</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">14-Feb-18 07:26 PM</span>
+<div class="msg-content">
+perhaps. i think we had our chances for all that the week before<span class="msg-edited" title="14-Feb-18 07:26 PM">(edited)</span></div>
+<div class="msg-content">
+in fact...nah</div>
+<div class="msg-content">
+i need to bring more tinfoil</div>
+<div class="msg-content">
+i&#39;ve been doing nothing for the last week, tbh</div>
+<div class="msg-content">
+which is kinda crap</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">17-Feb-18 10:03 PM</span>
+<div class="msg-content">
+How many hours do we need to do?</div>
+<div class="msg-content">
+till work exp is done</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">18-Feb-18 05:46 PM</span>
+<div class="msg-content">
+30</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">18-Feb-18 05:46 PM</span>
+<div class="msg-content">
+ta</div>
+</div>
+</div>
+</div>
+</body>
+</html>

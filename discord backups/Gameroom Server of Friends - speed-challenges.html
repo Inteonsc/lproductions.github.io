@@ -1,0 +1,681 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gameroom Server of Friends - speed-challenges</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/269812107355226122/fa80a5cd7dd53eeff51f38b6135d020f.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Gameroom Server of Friends</div>
+<div class="channel-name">speed-challenges</div>
+<div class="misc">66 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">10-Feb-18 05:54 PM</span>
+<div class="msg-content">
+<span class="mention" title="Toby Echozap#3346">@Toby Echozap</span> <span class="mention" title="Critical Knight#6440">@Critical Knight</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">10-Feb-18 05:54 PM</span>
+<div class="msg-content">
+you called</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">10-Feb-18 05:54 PM</span>
+<div class="msg-content">
+shall we make this a channel for the speed type things?</div>
+<div class="msg-content">
+so like the art thing</div>
+<div class="msg-content">
+and the games aswell</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">10-Feb-18 05:54 PM</span>
+<div class="msg-content">
+indeed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">10-Feb-18 05:55 PM</span>
+<div class="msg-content">
+Yup</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">10-Feb-18 05:55 PM</span>
+<div class="msg-content">
+makes sence to have it all in one palce</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">10-Feb-18 05:55 PM</span>
+<div class="msg-content">
+Maybe this shouldn&#39;t just be a speed channel but also for all things challenges</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">10-Feb-18 05:55 PM</span>
+<div class="msg-content">
+<img class="emoji" title=":disapointment:" src="https://cdn.discordapp.com/emojis/411894984166604803.png" /></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">10-Feb-18 05:56 PM</span>
+<div class="msg-content">
+<span class="mention">#speed-challenges</span> ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">10-Feb-18 05:56 PM</span>
+<div class="msg-content">
+Yeah<span class="msg-edited" title="10-Feb-18 05:56 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">10-Feb-18 07:29 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> i can now announce the first Speed challenge that we are doing. This will decide the player of the week and there may be a possibility of dogecoin prizes(not guaranteed but most likely will be for the first 4 of these events).<br /><br />The first speed challenge will be in Minecraft. The goal of the challenge will be to get full iron armour and level 15 as fast as possible. This must be done in 1.12 and the seed is &quot;speedchallenge&quot;. Submissions are allowed until Saturday Feb 17th midnight.<br /><br />Rules:<br />For verification reasons videos would be required. (posted in this chat)<br />No glitches (such as duplication glitch) are allowed.<br />Timing starts on the first input (e.g when you press a movement key.)<br />Timing ends when you have full iron armour equipped and are level 15.<br />No scripts allowed<br />Must be in survival mode and at least easy difficulty<br /><br />I recommend using <a href="http://livesplit.github.io/">http://livesplit.github.io/</a> for timing. This is because you can make it stay on top of your other windows and also allows you to have hotkeys to start and stop<span class="msg-edited" title="10-Feb-18 08:41 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">10-Feb-18 07:29 PM</span>
+<div class="msg-content">
+Pinned a message.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">10-Feb-18 08:37 PM</span>
+<div class="msg-content">
+From now on the seed is &quot;speedchallenge&quot;</div>
+<div class="msg-content">
+the issue with the last seed was it was mesa for miles so you would never find food and would just die to mobs due to no regen</div>
+<div class="msg-content">
+sorry for the inconvience</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">10-Feb-18 09:16 PM</span>
+<div class="msg-content">
+village and cave system near -511 61 78</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Feb-18 10:22 AM</span>
+<div class="msg-content">
+29:19.23</div>
+<div class="msg-content">
+&#128550;</div>
+<div class="msg-content">
+I&#39;m bad at minecraft</div>
+<div class="msg-content">
+(uploading vid)</div>
+<div class="msg-content">
+I dont care if it&#39;s too laggy</div>
+<div class="msg-content">
+turns out my second account can&#39;t do long vids</div>
+<div class="msg-content">
+I&#39;ll just stream</div>
+<div class="msg-content">
+instead &#128539;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">11-Feb-18 10:41 AM</span>
+<div class="msg-content">
+&#128539;</div>
+<div class="msg-content">
+is there really a limit to length?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Feb-18 10:42 AM</span>
+<div class="msg-content">
+I&#39;d need to verify my account but I&#39;m too lazy for that</div>
+<div class="msg-content">
+or not</div>
+<div class="msg-content">
+twitch being a bitch</div>
+<div class="msg-content">
+seems like I cant even use twitch ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Feb-18 11:19 AM</span>
+<div class="msg-content">
+rip</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">11-Feb-18 11:21 AM</span>
+<div class="msg-content">
+its working now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Feb-18 11:21 AM</span>
+<div class="msg-content">
+ye</div>
+<div class="msg-content">
+i&#39;m in VC</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Feb-18 08:21 PM</span>
+<div class="msg-content">
+due to low submissions and suggestion from george this speed challenge is extended for a week due to the fact most people was busy.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">19-Feb-18 08:21 PM</span>
+<div class="msg-content">
+oi arseeface</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Feb-18 08:21 PM</span>
+<div class="msg-content">
+yesh</div>
+<div class="msg-content">
+what is it <span class="mention" title="Dutch#5665">@Dutch</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">19-Feb-18 08:23 PM</span>
+<div class="msg-content">
+i have an idea but its for minceraft</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Feb-18 08:23 PM</span>
+<div class="msg-content">
+ok</div>
+<div class="msg-content">
+what is it?</div>
+<div class="msg-content">
+this speedthing was in minecraft</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">19-Feb-18 08:26 PM</span>
+<div class="msg-content">
+tow people are in an arena and they are told bo build something within 5 mins and we could do it as a compertition with prizes on the normal server  but not over the top ones</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Feb-18 08:28 PM</span>
+<div class="msg-content">
+sounds like a good idea</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">19-Feb-18 08:30 PM</span>
+<div class="msg-content">
+yeah and like we can have a poll for each build</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Feb-18 08:31 PM</span>
+<div class="msg-content">
+<span class="mention" title="Toby Echozap#3346">@Toby Echozap</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">19-Feb-18 08:31 PM</span>
+<div class="msg-content">
+sure</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">19-Feb-18 08:31 PM</span>
+<div class="msg-content">
+yay ill be the overlord and ill kill the loser</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Feb-18 08:31 PM</span>
+<div class="msg-content">
+oh yea i can now confirm a dogecoin prize for the next 3 competitions we do</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">19-Feb-18 08:31 PM</span>
+<div class="msg-content">
+jk</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Feb-18 08:31 PM</span>
+<div class="msg-content">
+probably be like a 50p reward or something</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">19-Feb-18 08:32 PM</span>
+<div class="msg-content">
+how about the loser has to do a job for the winner</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Feb-18 08:32 PM</span>
+<div class="msg-content">
+yea could do</div>
+<div class="msg-content">
+we can also do this prize aswell for the winner so they actually get something worth something</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">19-Feb-18 08:36 PM</span>
+<div class="msg-content">
+Like a twix</div>
+<div class="msg-content">
+Yeah</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Feb-18 08:36 PM</span>
+<div class="msg-content">
+yea</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">19-Feb-18 08:37 PM</span>
+<div class="msg-content">
+See I can be civil</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">20-Feb-18 08:02 PM</span>
+<div class="msg-content">
+prize now is 30p each(payed in doge or bitcoin) for the next 3 challenges</div>
+<div class="msg-content">
+it will increase more though</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">20-Feb-18 08:02 PM</span>
+<div class="msg-content">
+&#128076;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/272496312115527680/066b84596c753b388898f454a353068a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#119868;&#120001;&#120001;&#120007;&#119990;#4008">&#119868;&#120001;&#120001;&#120007;&#119990;</span>
+<span class="msg-date">06-Jun-18 08:08 AM</span>
+<div class="msg-content">
+Ded channel</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">06-Jun-18 08:09 AM</span>
+<div class="msg-content">
+you&#39;re a dead channel</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/272496312115527680/066b84596c753b388898f454a353068a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#119868;&#120001;&#120001;&#120007;&#119990;#4008">&#119868;&#120001;&#120001;&#120007;&#119990;</span>
+<span class="msg-date">06-Jun-18 09:08 AM</span>
+<div class="msg-content">
+Fite me</div>
+</div>
+</div>
+</div>
+</body>
+</html>
