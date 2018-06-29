@@ -1,0 +1,2996 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gameroom Server of Friends - e3-chat</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/269812107355226122/fa80a5cd7dd53eeff51f38b6135d020f.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Gameroom Server of Friends</div>
+<div class="channel-name">e3-chat</div>
+<div class="misc">387 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">05-Jun-18 02:21 PM</span>
+<div class="msg-content">
+<a href="https://twitter.com/NintendoEurope/status/1003971477643853824">https://twitter.com/NintendoEurope/status/1003971477643853824</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">05-Jun-18 02:21 PM</span>
+<div class="msg-content">
+Mmm</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/189479626425237513/5eb9d6fd339c9544b03e863071ed8639.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="pengu for starter#3202">pengu for starter</span>
+<span class="msg-date">06-Jun-18 08:13 AM</span>
+<div class="msg-content">
+i want the new fallout</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">06-Jun-18 08:14 AM</span>
+<div class="msg-content">
+idc if it&#39;s an online fallout</div>
+<div class="msg-content">
+i want it</div>
+<div class="msg-content">
+give</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/272496312115527680/066b84596c753b388898f454a353068a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#119868;&#120001;&#120001;&#120007;&#119990;#4008">&#119868;&#120001;&#120001;&#120007;&#119990;</span>
+<span class="msg-date">06-Jun-18 09:08 AM</span>
+<div class="msg-content">
+It’s co op</div>
+<div class="msg-content">
+: D</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/189479626425237513/5eb9d6fd339c9544b03e863071ed8639.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="pengu for starter#3202">pengu for starter</span>
+<span class="msg-date">06-Jun-18 10:26 AM</span>
+<div class="msg-content">
+I know I want it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/189479626425237513/5eb9d6fd339c9544b03e863071ed8639.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="pengu for starter#3202">pengu for starter</span>
+<span class="msg-date">06-Jun-18 01:50 PM</span>
+<div class="msg-content">
+Fallout is gonna be dope</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">06-Jun-18 04:35 PM</span>
+<div class="msg-content">
+But my dudes</div>
+<div class="msg-content">
+Smash</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">06-Jun-18 04:36 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=UqCg5JcMvfk">https://www.youtube.com/watch?v=UqCg5JcMvfk</a> pre ea rip off of e3 trailer and omg finally new content for this game after 6 months of very little</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">06-Jun-18 04:36 PM</span>
+<div class="msg-content">
+for a console that i dont own</div>
+<div class="msg-content">
+nor do I have the money to get</div>
+<div class="msg-content">
+no smash</div>
+<div class="msg-content">
+fallout</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">06-Jun-18 04:38 PM</span>
+<div class="msg-content">
+fallout 77</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">06-Jun-18 04:38 PM</span>
+<div class="msg-content">
+Amazing<span class="msg-edited" title="06-Jun-18 04:38 PM">(edited)</span></div>
+<div class="msg-content">
+<a href="https://twitter.com/SmashBros_Nin/status/1004056162981928961?s=19">https://twitter.com/SmashBros_Nin/status/1004056162981928961?s=19</a></div>
+<div class="msg-content">
+Man i can&#39;t fucking wait</div>
+<div class="msg-content">
+(Not official btw)</div>
+<div class="msg-content">
+But like it or not</div>
+<div class="msg-content">
+He has a very high likelyhood</div>
+<div class="msg-content">
+And you know what</div>
+<div class="msg-content">
+Bring it on</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">08-Jun-18 09:45 PM</span>
+<div class="msg-content">
+<a href="https://twitter.com/geoffkeighley/status/1005130760477659136">https://twitter.com/geoffkeighley/status/1005130760477659136</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/272496312115527680/066b84596c753b388898f454a353068a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#119868;&#120001;&#120001;&#120007;&#119990;#4008">&#119868;&#120001;&#120001;&#120007;&#119990;</span>
+<span class="msg-date">08-Jun-18 09:56 PM</span>
+<div class="msg-content">
+All i want to know that is there going to be BL3 at e3</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">08-Jun-18 09:57 PM</span>
+<div class="msg-content">
+maybe</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">08-Jun-18 10:35 PM</span>
+<div class="msg-content">
+<a href="https://twitter.com/Nibellion/status/1004788940958846976">https://twitter.com/Nibellion/status/1004788940958846976</a></div>
+<div class="msg-content">
+<a href="https://twitter.com/geoffkeighley/status/1005115034211516416">https://twitter.com/geoffkeighley/status/1005115034211516416</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 02:05 PM</span>
+<div class="msg-content">
+<a href="https://www.ea.com/">https://www.ea.com/</a> yea its not e3 but its the start for the company that is to afrid to go to e3</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 03:04 PM</span>
+<div class="msg-content">
+<a href="https://cdn.discordapp.com/attachments/322786617272303617/452508772586225692/n5h6744pu9111.jpg">https://cdn.discordapp.com/attachments/322786617272303617/452508772586225692/n5h6744pu9111.jpg</a></div>
+<div class="msg-content">
+Pinned a message.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">09-Jun-18 03:04 PM</span>
+<div class="msg-content">
+<a href="https://gaming.youtube.com/e3">https://gaming.youtube.com/e3</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 03:13 PM</span>
+<div class="msg-content">
+<i><b><u>All E3 Press Conferences in British Standard Time (BST)</u></b></i><br /><br /><b>EA</b> - Saturday, June 9th @ 7:00 PM<br /><b>Microsoft</b> - Sunday, June 10th @ 9:00 PM<br /><b>Bethesda</b> - Monday, June 11 @ 2:30 AM<br /><b>Devolver Digital</b> - Monday, June 11 @ 4:00 AM &#127909; <br /><b>Square Enix</b> - Monday, June 11 @ 6:00 PM &#127909;<br /><b>Ubisoft</b> - Monday, June 11 @ 9:00 PM<br /><b>PC Gamer</b> - Monday, June 11 @ 11:00 PM<br /><b>Sony</b> - Tuesday, June 12 @ 2:00 AM<br /><b>Nintendo</b> - Tuesday, June 12 @ 5:00 PM &#127909; <br /><br />&#127909; = Pre-Recorded<span class="msg-edited" title="09-Jun-18 03:13 PM">(edited)</span></div>
+<div class="msg-content">
+Pinned a message.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 04:08 PM</span>
+<div class="msg-content">
+so what are people looking foward to</div>
+<div class="msg-content">
+for e3</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">09-Jun-18 04:08 PM</span>
+<div class="msg-content">
+everything to do with the walking dead</div>
+<div class="msg-content">
+telltale and overkill</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/420190259943571456/55655c9614bd20d5519309480224e3e9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CrashDandicoot!!#3620">CrashDandicoot!!</span>
+<span class="msg-date">09-Jun-18 04:09 PM</span>
+<div class="msg-content">
+Sony and Bethesda. Also a slice of square enix for hitman 2</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 04:09 PM</span>
+<div class="msg-content">
+walking dead stuff, value, bf2, the new possible star wars game. and anything that is actualy intersting</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/420190259943571456/55655c9614bd20d5519309480224e3e9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CrashDandicoot!!#3620">CrashDandicoot!!</span>
+<span class="msg-date">09-Jun-18 04:10 PM</span>
+<div class="msg-content">
+Also Spyro remastered gameplay XD</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 04:13 PM</span>
+<div class="msg-content">
+smash</div>
+<div class="msg-content">
+I will be hosting a rabb.it session later today for the EA conference</div>
+<div class="msg-content">
+In approx 2 hours</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">09-Jun-18 04:52 PM</span>
+<div class="msg-content">
+why</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 04:52 PM</span>
+<div class="msg-content">
+becuase some of us want to watch it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">09-Jun-18 04:52 PM</span>
+<div class="msg-content">
+whats the point</div>
+<div class="msg-content">
+just read whats coming out in the lists after its faster and less cringy<span class="msg-edited" title="09-Jun-18 04:53 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 04:53 PM</span>
+<div class="msg-content">
+Usually id do that but whatever. I&#39;m around to see this and i have nothing better to do</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">09-Jun-18 04:54 PM</span>
+<div class="msg-content">
+dont you remember last years being a smooth as a five lane pile up</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 04:54 PM</span>
+<div class="msg-content">
+I didn&#39;t watch EA last year</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">09-Jun-18 04:54 PM</span>
+<div class="msg-content">
+why would you watch ea when e3s on</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 04:55 PM</span>
+<div class="msg-content">
+It&#39;s EAs conference</div>
+<div class="msg-content">
+The only two I really want to watch in the pinned list is Sony and Nintendo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">09-Jun-18 04:56 PM</span>
+<div class="msg-content">
+theonly good thing last year was devolver digital because someones head exploded</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 04:56 PM</span>
+<div class="msg-content">
+Ah yes</div>
+<div class="msg-content">
+It&#39;ll be shit this time</div>
+<div class="msg-content">
+Because Disney XD is hosting it</div>
+<div class="msg-content">
+So it won&#39;t be as intense</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">09-Jun-18 04:59 PM</span>
+<div class="msg-content">
+eh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 05:21 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=qw16v3oGXso">https://www.youtube.com/watch?v=qw16v3oGXso</a></div>
+<div class="msg-content">
+40 minutes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 05:50 PM</span>
+<div class="msg-content">
+40?</div>
+<div class="msg-content">
+Isn&#39;t it another 70?</div>
+<div class="msg-content">
+Shit</div>
+<div class="msg-content">
+Seems I was an hour off</div>
+<div class="msg-content">
+Can&#39;t access my PC right now. Shite</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 06:03 PM</span>
+<div class="msg-content">
+wait</div>
+<div class="msg-content">
+its still 7</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 06:04 PM</span>
+<div class="msg-content">
+Ok good</div>
+<div class="msg-content">
+I thought that was what was going on</div>
+<div class="msg-content">
+They start the stream an hour before hand</div>
+<div class="msg-content">
+ok ready</div>
+<div class="msg-content">
+will join call</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/189479626425237513/5eb9d6fd339c9544b03e863071ed8639.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="pengu for starter#3202">pengu for starter</span>
+<span class="msg-date">09-Jun-18 06:55 PM</span>
+<div class="msg-content">
+<a href="https://www.rabb.it/Bunny1528566505981">https://www.rabb.it/Bunny1528566505981</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:22 PM</span>
+<div class="msg-content">
+george youre missing star waaaaaaaars</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">09-Jun-18 07:22 PM</span>
+<div class="msg-content">
+FUCKIN BATTLEFRONT 2</div>
+<div class="msg-content">
+OMGAAAAAAAAAAAAAAD</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:23 PM</span>
+<div class="msg-content">
+the guy presenting looks like noah</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/455074467865952258/unknown.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/455074467865952258/unknown.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">09-Jun-18 07:23 PM</span>
+<div class="msg-content">
+bob ross with down-syndrome</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:25 PM</span>
+<div class="msg-content">
+dere he is</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/455074959316746240/unknown.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/455074959316746240/unknown.png" />
+</a>
+</div>
+<div class="msg-content">
+&quot;i really think this game has a bright future&quot;</div>
+<div class="msg-content">
+pFfdfgft</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">09-Jun-18 07:27 PM</span>
+<div class="msg-content">
+What a load of bollocks</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:29 PM</span>
+<div class="msg-content">
+YARN BABIES</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/455075901043113996/unknown.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/455075901043113996/unknown.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">09-Jun-18 07:29 PM</span>
+<div class="msg-content">
+unravel got a sequel</div>
+<div class="msg-content">
+yeet</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 07:29 PM</span>
+<div class="msg-content">
+I MISSED THE ONE BIT I WANTED TO SEE</div>
+<div class="msg-content">
+what is going on</div>
+<div class="msg-content">
+what bf2 stuff</div>
+<div class="msg-content">
+i litely mssed the one thing i wanted to see</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:31 PM</span>
+<div class="msg-content">
+poor poor george</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 07:31 PM</span>
+<div class="msg-content">
+THERE WAS A TRAILER</div>
+<div class="msg-content">
+where</div>
+<div class="msg-content">
+i cant rewind it while live</div>
+<div class="msg-content">
+so i missed the one thing i wnated to see andcant see it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:34 PM</span>
+<div class="msg-content">
+oh well</div>
+<div class="msg-content">
+catch it later</div>
+<div class="msg-content">
+join the rabbit</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 07:35 PM</span>
+<div class="msg-content">
+im watching it live</div>
+<div class="msg-content">
+i have been waiting 7 months to see this news</div>
+<div class="msg-content">
+i am not going to watch it later</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/180005256422359040/76b2ba4604b2afa93f955da475a4ea08.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Helios_Sol#1155">Helios_Sol</span>
+<span class="msg-date">09-Jun-18 07:36 PM</span>
+<div class="msg-content">
+lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 07:37 PM</span>
+<div class="msg-content">
+serously im the only one who plays the game and i cant wathc the trailer and relivle</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:38 PM</span>
+<div class="msg-content">
+oof</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/189479626425237513/5eb9d6fd339c9544b03e863071ed8639.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="pengu for starter#3202">pengu for starter</span>
+<span class="msg-date">09-Jun-18 07:38 PM</span>
+<div class="msg-content">
+rip</div>
+<div class="msg-content">
+this german bitch needs to shut the fuck up</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 07:48 PM</span>
+<div class="msg-content">
+i still cant find it...... i have not waited 7 months to not find out the content that can save the game......</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">09-Jun-18 07:48 PM</span>
+<div class="msg-content">
+O</div>
+<div class="msg-content">
+O</div>
+<div class="msg-content">
+F</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:49 PM</span>
+<div class="msg-content">
+i saw solo</div>
+<div class="msg-content">
+and grevious</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 07:49 PM</span>
+<div class="msg-content">
+solo was annoucned already</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:49 PM</span>
+<div class="msg-content">
+and they played the same clip like 5 times while they were talking so uhhh not much footage</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 07:50 PM</span>
+<div class="msg-content">
+was the clip of solo stuff?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:50 PM</span>
+<div class="msg-content">
+a bit</div>
+<div class="msg-content">
+looked crap</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 07:50 PM</span>
+<div class="msg-content">
+was there footage of non solo stuff</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/189479626425237513/5eb9d6fd339c9544b03e863071ed8639.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="pengu for starter#3202">pengu for starter</span>
+<span class="msg-date">09-Jun-18 07:53 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/455081933534396436/unknown.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/455081933534396436/unknown.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:54 PM</span>
+<div class="msg-content">
+oof</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 07:56 PM</span>
+<div class="msg-content">
+fiinally found it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 07:58 PM</span>
+<div class="msg-content">
+cool<span class="msg-edited" title="09-Jun-18 07:58 PM">(edited)</span></div>
+<div class="msg-content">
+whats new</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 08:00 PM</span>
+<div class="msg-content">
+well its about time</div>
+<div class="msg-content">
+the stuff they are adding</div>
+<div class="msg-content">
+big turn around</div>
+<div class="msg-content">
+conquest like mode</div>
+<div class="msg-content">
+new star figutrew assulat mode</div>
+<div class="msg-content">
+that is a captain ship figther from the sounds of things</div>
+<div class="msg-content">
+the 4 main heros we are missing are coming</div>
+<div class="msg-content">
+geanosus</div>
+<div class="msg-content">
+so actualy</div>
+<div class="msg-content">
+the update we needed</div>
+<div class="msg-content">
+all the stuff we need to see</div>
+<div class="msg-content">
+being added</div>
+<div class="msg-content">
+is being added</div>
+<div class="msg-content">
+and a new star wars game</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">09-Jun-18 08:05 PM</span>
+<div class="msg-content">
+yay</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 08:06 PM</span>
+<div class="msg-content">
+this heros and stuff have been missing for so long</div>
+<div class="msg-content">
+i dont care any of the other stuff thats not star wars</div>
+<div class="msg-content">
+anthem</div>
+<div class="msg-content">
+looks</div>
+<div class="msg-content">
+meh</div>
+<div class="msg-content">
+lol</div>
+<div class="msg-content">
+&quot;how cool is that &quot; 3 people clap</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">09-Jun-18 08:18 PM</span>
+<div class="msg-content">
+looks like attack on titan but sci-fi</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">09-Jun-18 08:21 PM</span>
+<div class="msg-content">
+only thing im interstined in is the star wars stuff</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">10-Jun-18 12:45 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/4ouXm5aPLzY">https://youtu.be/4ouXm5aPLzY</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/189479626425237513/5eb9d6fd339c9544b03e863071ed8639.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="pengu for starter#3202">pengu for starter</span>
+<span class="msg-date">10-Jun-18 08:59 PM</span>
+<div class="msg-content">
+<a href="https://www.rabb.it/Bunny1528566505981">https://www.rabb.it/Bunny1528566505981</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/189479626425237513/5eb9d6fd339c9544b03e863071ed8639.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="pengu for starter#3202">pengu for starter</span>
+<span class="msg-date">10-Jun-18 09:02 PM</span>
+<div class="msg-content">
+<a href="https://www.rabb.it/Bunny1528566505981">https://www.rabb.it/Bunny1528566505981</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">10-Jun-18 09:09 PM</span>
+<div class="msg-content">
+<span class="mention" title="The Solo Rolo#3892">@The Solo Rolo</span></div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/455463606902063104/unknown.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/455463606902063104/unknown.png" />
+</a>
+</div>
+<div class="msg-content">
+ORI SEQUEL ANNOUNCED</div>
+<div class="msg-content">
+get in rabbit with us pls</div>
+<div class="msg-content">
+you missed the trailer but you can get later</div>
+<div class="msg-content">
+it looked amazing</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/c1aadb5252117980bb938d5db827634e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">10-Jun-18 09:12 PM</span>
+<div class="msg-content">
+I&#39;m playing Wii Sports</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/180005256422359040/76b2ba4604b2afa93f955da475a4ea08.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Helios_Sol#1155">Helios_Sol</span>
+<span class="msg-date">10-Jun-18 09:12 PM</span>
+<div class="msg-content">
+&#128529;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">10-Jun-18 09:12 PM</span>
+<div class="msg-content">
+BUT</div>
+<div class="msg-content">
+ORI</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/c1aadb5252117980bb938d5db827634e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">10-Jun-18 09:12 PM</span>
+<div class="msg-content">
+I&#39;ll catch up with my little Ori boy in a bit</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">10-Jun-18 09:13 PM</span>
+<div class="msg-content">
+i thougt youd be more hyped</div>
+<div class="msg-content">
+heh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/c1aadb5252117980bb938d5db827634e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">10-Jun-18 09:13 PM</span>
+<div class="msg-content">
+Is this Will of the wisps?</div>
+<div class="msg-content">
+I knew about it months ago<span class="msg-edited" title="10-Jun-18 09:13 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">10-Jun-18 09:13 PM</span>
+<div class="msg-content">
+o h</div>
+<div class="msg-content">
+my bad</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/c1aadb5252117980bb938d5db827634e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">10-Jun-18 09:15 PM</span>
+<div class="msg-content">
+It was first announced in October I think... This was probably the &quot;yeah guys we were just kidding about that at the time but here it is for real&quot; trailer</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">10-Jun-18 09:16 PM</span>
+<div class="msg-content">
+ohh</div>
+<div class="msg-content">
+well</div>
+<div class="msg-content">
+nice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">10-Jun-18 10:48 PM</span>
+<div class="msg-content">
+<a href="https://twitter.com/LilBoulder/status/1005925549578088450">https://twitter.com/LilBoulder/status/1005925549578088450</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 03:19 AM</span>
+<div class="msg-content">
+Not watching the stream but apparently there&#39;s A SEQUEL TO DOOM. FUCK YEAH</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">11-Jun-18 03:19 AM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/455556642725953547/drawings_spring_12key_23.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/455556642725953547/drawings_spring_12key_23.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 03:19 AM</span>
+<div class="msg-content">
+h</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">11-Jun-18 03:20 AM</span>
+<div class="msg-content">
+thats how to jump</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 03:57 AM</span>
+<div class="msg-content">
+Elder Scrolls 6 is a fucking thing</div>
+<div class="msg-content">
+Not coming out for a while though</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 04:00 AM</span>
+<div class="msg-content">
+Oh SHIII</div>
+<div class="msg-content">
+That&#39;s good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 05:21 AM</span>
+<div class="msg-content">
+<a href="https://twitter.com/devolverdigital/status/1006012882646007809?s=21">https://twitter.com/devolverdigital/status/1006012882646007809?s=21</a></div>
+<div class="msg-content">
+Okee I&#39;m going to bed now</div>
+<div class="msg-content">
+Or maybe i shouldnt...idk</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 09:12 AM</span>
+<div class="msg-content">
+I didn&#39;t</div>
+<div class="msg-content">
+<span class="mention" title="The Solo Rolo#3892">@The Solo Rolo</span></div>
+<div class="msg-content">
+Elder Scrolls 6 was announced</div>
+<div class="msg-content">
+(it&#39;s a mobile game)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 09:15 AM</span>
+<div class="msg-content">
+But what about the <i>real</i> ES 6</div>
+<div class="msg-content">
+Sekiro Shadows Die Twice doesn&#39;t look amazing but it looks great.</div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?time_continue=1&amp;v=UGPknmiLxGo">https://www.youtube.com/watch?time_continue=1&amp;v=UGPknmiLxGo</a></div>
+<div class="msg-content">
+Ok so I just watched the announcement trailer for the elder scrolls 6 and I&#39;m immediately speculating where it might be. areas I know won&#39;t be it: skyrim, cyrodil, valenwood, morrowind and black marsh.<br /><br />The reason why I know this is because of the geometry. I have a strong feeling it might be in either high rock or elsweyr. Maybe they could do a full 180 and base it in a different continent like akavir or aldermeris or even perhaps somewhere entirely different.<span class="msg-edited" title="11-Jun-18 10:01 AM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">11-Jun-18 10:01 AM</span>
+<div class="msg-content">
+The popular theory is that it&#39;s in vardenfell</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 10:02 AM</span>
+<div class="msg-content">
+hm, tis a slight possibility</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">11-Jun-18 10:02 AM</span>
+<div class="msg-content">
+Yeah</div>
+<div class="msg-content">
+Or it could be set before the events of arena</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 10:03 AM</span>
+<div class="msg-content">
+that would be interesting</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">11-Jun-18 10:21 AM</span>
+<div class="msg-content">
+Or it could be on the other continents</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 11:37 AM</span>
+<div class="msg-content">
+<a href="https://youtu.be/Kw-ByhpwjcE">https://youtu.be/Kw-ByhpwjcE</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 11:44 AM</span>
+<div class="msg-content">
+gaming gamers</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 12:37 PM</span>
+<div class="msg-content">
+Gamers</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">11-Jun-18 12:55 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=FnEW6dX_BmU">https://www.youtube.com/watch?v=FnEW6dX_BmU</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 12:57 PM</span>
+<div class="msg-content">
+when is it being ported to my printer?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">11-Jun-18 12:57 PM</span>
+<div class="msg-content">
+they didn&#39;t announce that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 12:58 PM</span>
+<div class="msg-content">
+i want to play it on my printer tho</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 12:58 PM</span>
+<div class="msg-content">
+They ported it again</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">11-Jun-18 12:58 PM</span>
+<div class="msg-content">
+someone may mod it</div>
+<div class="msg-content">
+they did announce that Fallout 76 is multiplayer</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 01:00 PM</span>
+<div class="msg-content">
+has 12 player servers tho</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">11-Jun-18 01:00 PM</span>
+<div class="msg-content">
+yea</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 01:00 PM</span>
+<div class="msg-content">
+for authentic reasons</div>
+<div class="msg-content">
+&quot;It&#39;s an apocalypse, not an amusement park&quot; I believe the quote was</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">11-Jun-18 01:01 PM</span>
+<div class="msg-content">
+he also said &quot;It doesn&#39;t always just work&quot;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 01:03 PM</span>
+<div class="msg-content">
+yea he said that</div>
+<div class="msg-content">
+I watched the entirety of the Bethesda conference about an hour ago</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 01:07 PM</span>
+<div class="msg-content">
+i watched it live</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 01:07 PM</span>
+<div class="msg-content">
+I would&#39;ve but I had no idea when it was happening</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 01:58 PM</span>
+<div class="msg-content">
+<a href="https://twitter.com/guek_jc/status/1005675337202610176">https://twitter.com/guek_jc/status/1005675337202610176</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 02:56 PM</span>
+<div class="msg-content">
+21 weeks 2 days till Fallout 76 is released, guys</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/189479626425237513/5eb9d6fd339c9544b03e863071ed8639.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="pengu for starter#3202">pengu for starter</span>
+<span class="msg-date">11-Jun-18 03:02 PM</span>
+<div class="msg-content">
+new edler scrolls game new fallout new elder scrolls game mobile and more HOLY SHIT IM HYPED</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 03:04 PM</span>
+<div class="msg-content">
+new doom, new wolfenstein</div>
+<div class="msg-content">
+that bethesda conference was fucking great</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/189479626425237513/5eb9d6fd339c9544b03e863071ed8639.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="pengu for starter#3202">pengu for starter</span>
+<span class="msg-date">11-Jun-18 03:07 PM</span>
+<div class="msg-content">
+DUDE I COULDNT FUCKIGN HOLD MY EXCITEMENT</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 03:08 PM</span>
+<div class="msg-content">
+fuckin elder scrolls 6 m8</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/180005256422359040/76b2ba4604b2afa93f955da475a4ea08.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Helios_Sol#1155">Helios_Sol</span>
+<span class="msg-date">11-Jun-18 03:08 PM</span>
+<div class="msg-content">
+Yay Valenwood</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/189479626425237513/5eb9d6fd339c9544b03e863071ed8639.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="pengu for starter#3202">pengu for starter</span>
+<span class="msg-date">11-Jun-18 03:08 PM</span>
+<div class="msg-content">
+i cant fucking wait</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 04:19 PM</span>
+<div class="msg-content">
+24 hours and 40 mins till Nintendo Direct</div>
+<div class="msg-content">
+wont be watching it with you guys cus im watching with a pal</div>
+<div class="msg-content">
+we hyped</div>
+<div class="msg-content">
+Square Enix is next</div>
+<div class="msg-content">
+they are at 6pm</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">11-Jun-18 05:23 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/455769151701516299/BE3.gif">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/455769151701516299/BE3.gif" />
+</a>
+</div>
+<div class="msg-content">
+every time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">11-Jun-18 05:24 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/455769243841986562/FB_IMG_1528734182287.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/455769243841986562/FB_IMG_1528734182287.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">11-Jun-18 05:24 PM</span>
+<div class="msg-content">
+also I bearly got shit done</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">11-Jun-18 05:39 PM</span>
+<div class="msg-content">
+wait did a trailer for 76 come out then?</div>
+<div class="msg-content">
+becuase im watching one now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">11-Jun-18 05:41 PM</span>
+<div class="msg-content">
+yea</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">11-Jun-18 05:41 PM</span>
+<div class="msg-content">
+looks good</div>
+<div class="msg-content">
+like its not just dirt all the time</div>
+<div class="msg-content">
+it looks nice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">11-Jun-18 05:42 PM</span>
+<div class="msg-content">
+its multiplayer</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">11-Jun-18 05:43 PM</span>
+<div class="msg-content">
+yea. that dosent matter. a game like fallout doing one multiplayer game may be good. i dont think it should be a new direction they stay with. but to have one multiplayer game isnt bad</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">11-Jun-18 05:45 PM</span>
+<div class="msg-content">
+Noah wants the nuclear launch codes when game comes out, he says he gonna make himself Trump. he&#39;s gonna make west Virginia great again like George Washington. he wants to be the new president.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">11-Jun-18 05:46 PM</span>
+<div class="msg-content">
+.......</div>
+<div class="msg-content">
+i dont really care</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/272496312115527680/066b84596c753b388898f454a353068a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#119868;&#120001;&#120001;&#120007;&#119990;#4008">&#119868;&#120001;&#120001;&#120007;&#119990;</span>
+<span class="msg-date">11-Jun-18 05:46 PM</span>
+<div class="msg-content">
+i want it just so i can nuke dan</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">11-Jun-18 05:48 PM</span>
+<div class="msg-content">
+say that when they make it a generic battle royale game like most shitty games are now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">11-Jun-18 05:48 PM</span>
+<div class="msg-content">
+Always the voice of inspiration</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">11-Jun-18 05:49 PM</span>
+<div class="msg-content">
+well battlefeild 5 got booed for saying we are doing battle royal game. by there own game changers</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">11-Jun-18 05:49 PM</span>
+<div class="msg-content">
+hey im the negetive one i have to point out the flaws in everything</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">11-Jun-18 05:49 PM</span>
+<div class="msg-content">
+RIP command and conquer &#128550; &#128550;<span class="msg-edited" title="11-Jun-18 05:49 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 06:00 PM</span>
+<div class="msg-content">
+Square Enix conference starts now</div>
+<div class="msg-content">
+I&#39;m not watching cus i got stuff to do</div>
+<div class="msg-content">
+for those who can watch: <a href="https://www.twitch.tv/squareenix">https://www.twitch.tv/squareenix</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 08:43 PM</span>
+<div class="msg-content">
+Ubisoft it in 15 minutes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 08:44 PM</span>
+<div class="msg-content">
+16 minutes if for some reason you need a more precise time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 08:45 PM</span>
+<div class="msg-content">
+mmmhh</div>
+<div class="msg-content">
+are we watching it</div>
+<div class="msg-content">
+im fuckiung wasted tonight</div>
+<div class="msg-content">
+tired</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 08:46 PM</span>
+<div class="msg-content">
+ill listen and opt in and out of viewing when the good bits are shown because im doing work</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 08:46 PM</span>
+<div class="msg-content">
+i was supposed to work today</div>
+<div class="msg-content">
+fuck</div>
+<div class="msg-content">
+hhh</div>
+<div class="msg-content">
+i think im gonna play steam</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 08:47 PM</span>
+<div class="msg-content">
+told myself i was gonna start working at 1pm</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 08:47 PM</span>
+<div class="msg-content">
+there&#39;s a game called steam?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 08:47 PM</span>
+<div class="msg-content">
+haven&#39;t started yet</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 08:48 PM</span>
+<div class="msg-content">
+my steam backlog</div>
+<div class="msg-content">
+have never even touched this one</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/455820681201057804/unknown.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/455820681201057804/unknown.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 08:48 PM</span>
+<div class="msg-content">
+play it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 08:49 PM</span>
+<div class="msg-content">
+i will</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 08:49 PM</span>
+<div class="msg-content">
+fish</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 08:50 PM</span>
+<div class="msg-content">
+Save me</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/455821130109026305/20180611_204945.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/455821130109026305/20180611_204945.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 08:50 PM</span>
+<div class="msg-content">
+oof</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 08:50 PM</span>
+<div class="msg-content">
+no</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 08:51 PM</span>
+<div class="msg-content">
+all i can do is tell you to move this convo to general chat, as it isn&#39;t really relevant to e3</div>
+<div class="msg-content">
+and, well, boobysoft</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 08:51 PM</span>
+<div class="msg-content">
+yeah it is because bots are in fallout 76 therefore botvice confirmed fallout 76</div>
+<div class="msg-content">
+I dubt anyone really cares about ubisoft anyway</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 08:54 PM</span>
+<div class="msg-content">
+i dont</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 08:54 PM</span>
+<div class="msg-content">
+same</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 08:58 PM</span>
+<div class="msg-content">
+20 hours until Nintendo&#39;s conference</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 08:59 PM</span>
+<div class="msg-content">
+Shrek for ssb 5</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 09:00 PM</span>
+<div class="msg-content">
+shrek dlc for kingdom hearts 3</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 09:02 PM</span>
+<div class="msg-content">
+That&#39;s DreamWorks you fuck</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 09:03 PM</span>
+<div class="msg-content">
+idfc</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 09:03 PM</span>
+<div class="msg-content">
+could still be done for super smash bros ;^)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 09:05 PM</span>
+<div class="msg-content">
+OMFG JUST DANCE SEQUEL HOYL SHIT GUIYS</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 09:05 PM</span>
+<div class="msg-content">
+no one cares</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 09:06 PM</span>
+<div class="msg-content">
+BUT DANCING PANDAS AND COOL EUROPEAN MUSICC</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 09:06 PM</span>
+<div class="msg-content">
+no one still cares</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 09:08 PM</span>
+<div class="msg-content">
+is it for wii</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 09:08 PM</span>
+<div class="msg-content">
+no it&#39;s for the virtual boy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 09:11 PM</span>
+<div class="msg-content">
+omg it is for wii</div>
+<div class="msg-content">
+switch, wii u and wii</div>
+<div class="msg-content">
+a wii game in october 2018 BABY</div>
+<div class="msg-content">
+it will never die</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 09:12 PM</span>
+<div class="msg-content">
+What the fuck</div>
+<div class="msg-content">
+how is the wii still alive</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 09:12 PM</span>
+<div class="msg-content">
+just dance</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 09:13 PM</span>
+<div class="msg-content">
+just dance sucks</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 09:18 PM</span>
+<div class="msg-content">
+only parents who want to feel young again still play that shit &#128539;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 09:22 PM</span>
+<div class="msg-content">
+top 3 games i&#39;m excited to see on e3 that i want: Fallout 76, The Elder Scrolls 6, Sekiro: Shadows die twice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 09:23 PM</span>
+<div class="msg-content">
+did you see the guy on the bike</div>
+<div class="msg-content">
+theyre showing Trials rn</div>
+<div class="msg-content">
+so cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 09:23 PM</span>
+<div class="msg-content">
+don&#39;t like trials<span class="msg-edited" title="11-Jun-18 09:23 PM">(edited)</span></div>
+<div class="msg-content">
+and no i&#39;m not watching</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 09:24 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/455829720559386644/Dfb9RUbX0AEOGUz.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/455829720559386644/Dfb9RUbX0AEOGUz.png" />
+</a>
+</div>
+<div class="msg-content">
+he rode in on stage and broke the podium</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">11-Jun-18 09:25 PM</span>
+<div class="msg-content">
+he&#39;s out here on the e3</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">11-Jun-18 09:41 PM</span>
+<div class="msg-content">
+someone forgot to turn off their microphone &#128539;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 09:46 PM</span>
+<div class="msg-content">
+haha yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">11-Jun-18 10:15 PM</span>
+<div class="msg-content">
+goooood conference tho</div>
+<div class="msg-content">
+<a href="https://twitter.com/JimSterling/status/1006280745822941190">https://twitter.com/JimSterling/status/1006280745822941190</a></div>
+<div class="msg-content">
+look at that soft boy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">12-Jun-18 01:29 AM</span>
+<div class="msg-content">
+i caught some gameplay for overkill&#39;s the walking dead and it looks boring</div>
+<div class="msg-content">
+fml</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">12-Jun-18 06:44 AM</span>
+<div class="msg-content">
+I slept through Sonys conference but from what i can tell it crashed and burned</div>
+<div class="msg-content">
+Oh but we got this</div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=fn5WNxy-Wcw">https://www.youtube.com/watch?v=fn5WNxy-Wcw</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">12-Jun-18 11:59 AM</span>
+<div class="msg-content">
+Nintendo is in 5 hours</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">12-Jun-18 06:04 PM</span>
+<div class="msg-content">
+SOGFIHdzaoi[vhd[opibshvopfighopghfgiopfhg ok]sfdhgf ihgof hg f ogbsf g</div>
+<div class="msg-content">
+that is all i will say for smash bros</div>
+<div class="msg-content">
+<s>because most of you dont give a shit and im busy screaming in other servers</s></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">12-Jun-18 06:05 PM</span>
+<div class="msg-content">
+smash bros is lit</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">12-Jun-18 06:05 PM</span>
+<div class="msg-content">
+YEEEEEEEEE</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">12-Jun-18 06:15 PM</span>
+<div class="msg-content">
+Super smash Bros Ultimate</div>
+<div class="msg-content">
+I know about it</div>
+<div class="msg-content">
+Ridley playable</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">12-Jun-18 06:18 PM</span>
+<div class="msg-content">
+YESASDFsdfg</div>
+<div class="msg-content">
+YES</div>
+<div class="msg-content">
+ITS EVERY CHARACTER FROM EVERY SMASH</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">12-Jun-18 06:19 PM</span>
+<div class="msg-content">
+Yes</div>
+<div class="msg-content">
+I&#39;m watching the stream</div>
+<div class="msg-content">
+but#</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">12-Jun-18 06:19 PM</span>
+<div class="msg-content">
+wait what</div>
+<div class="msg-content">
+there is a stream</div>
+<div class="msg-content">
+psot it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">12-Jun-18 06:19 PM</span>
+<div class="msg-content">
+<a href="https://www.twitch.tv/nintendo">https://www.twitch.tv/nintendo</a></div>
+<div class="msg-content">
+the stream is on break</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">12-Jun-18 06:20 PM</span>
+<div class="msg-content">
+@ me when its back on</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">12-Jun-18 06:20 PM</span>
+<div class="msg-content">
+<span class="mention" title="Toby Echozap#3346">@Toby Echozap</span></div>
+<div class="msg-content">
+pokemon stuff now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">12-Jun-18 06:21 PM</span>
+<div class="msg-content">
+thanks</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">12-Jun-18 06:22 PM</span>
+<div class="msg-content">
+they played some smash</div>
+<div class="msg-content">
+im fucking</div>
+<div class="msg-content">
+Adiohsadgo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">12-Jun-18 06:23 PM</span>
+<div class="msg-content">
+If I had switch I&#39;d be hyped</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">12-Jun-18 06:25 PM</span>
+<div class="msg-content">
+i DO</div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=uHRwMmwbFnA">https://www.youtube.com/watch?v=uHRwMmwbFnA</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">12-Jun-18 06:27 PM</span>
+<div class="msg-content">
+bring it into college one day</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">12-Jun-18 06:27 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=8x0NdTsmWv8">https://www.youtube.com/watch?v=8x0NdTsmWv8</a></div>
+<div class="msg-content">
+ok</div>
+<div class="msg-content">
+december 7<span class="msg-edited" title="12-Jun-18 06:46 PM">(edited)</span></div>
+<div class="msg-content">
+thank GOD</div>
+<div class="msg-content">
+people were saying september but if it was then i&#39;d fucking die cus then i&#39;d have to wait for my birthday</div>
+<div class="msg-content">
+<a href="https://www.smashbros.com/en_US/fighter/index.html">https://www.smashbros.com/en_US/fighter/index.html</a></div>
+<div class="msg-content">
+LOOK AT ALL THE CHARACTERS</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">12-Jun-18 06:29 PM</span>
+<div class="msg-content">
+yay mario died in the trailer</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">12-Jun-18 06:31 PM</span>
+<div class="msg-content">
+Yeah what a relief</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">12-Jun-18 06:34 PM</span>
+<div class="msg-content">
+&gt;:(</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">12-Jun-18 07:16 PM</span>
+<div class="msg-content">
+so they went on break</div>
+<div class="msg-content">
+and they came back</div>
+<div class="msg-content">
+and im like</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/453548715270078485/456159920975511564/unknown.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/453548715270078485/456159920975511564/unknown.png" />
+</a>
+</div>
+<div class="msg-content">
+o h</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">13-Jun-18 07:00 PM</span>
+<div class="msg-content">
+e3 is good</div>
+<div class="msg-content">
+whats studying lmao</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">14-Jun-18 06:56 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=FnRHJ_nhgjU">https://www.youtube.com/watch?v=FnRHJ_nhgjU</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">16-Jun-18 04:59 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/Rf9PClQKOmg">https://youtu.be/Rf9PClQKOmg</a></div>
+<div class="msg-content">
+One day</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">16-Jun-18 04:59 PM</span>
+<div class="msg-content">
+#waluigiforsmash</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">16-Jun-18 05:00 PM</span>
+<div class="msg-content">
+he is dead</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">16-Jun-18 05:00 PM</span>
+<div class="msg-content">
+isn&#39;t e3 over now?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">16-Jun-18 05:04 PM</span>
+<div class="msg-content">
+not sure</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">16-Jun-18 05:04 PM</span>
+<div class="msg-content">
+think so</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">16-Jun-18 05:10 PM</span>
+<div class="msg-content">
+if so maybe lock down the channel till next year</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">16-Jun-18 05:20 PM</span>
+<div class="msg-content">
+Keep it up for a week<span class="msg-edited" title="16-Jun-18 05:20 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">18-Jun-18 10:24 AM</span>
+<div class="msg-content">
+<a href="https://youtu.be/QYrV_Mn1mNE">https://youtu.be/QYrV_Mn1mNE</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">27-Jun-18 05:14 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/rPULz0kakhU">https://youtu.be/rPULz0kakhU</a></div>
+</div>
+</div>
+</div>
+</body>
+</html>

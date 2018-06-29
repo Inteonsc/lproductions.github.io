@@ -1,0 +1,670 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gameroom Server of Friends - mod-minecraft-talk</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/269812107355226122/fa80a5cd7dd53eeff51f38b6135d020f.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Gameroom Server of Friends</div>
+<div class="channel-name">mod-minecraft-talk</div>
+<div class="misc">59 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">08-Dec-17 06:18 PM</span>
+<div class="msg-content">
+Get ready bois</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">08-Dec-17 06:19 PM</span>
+<div class="msg-content">
+mutant creatures</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">08-Dec-17 06:19 PM</span>
+<div class="msg-content">
+mods  comes later</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/e2dc0c96cd8de7cfc86949d987713756.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Critical Knight#6440">Critical Knight</span>
+<span class="msg-date">08-Dec-17 06:20 PM</span>
+<div class="msg-content">
+lol ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">08-Dec-17 06:20 PM</span>
+<div class="msg-content">
+jaffa cakes mod when</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">08-Dec-17 06:20 PM</span>
+<div class="msg-content">
+first what vershion and what hosting servis</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">08-Dec-17 06:21 PM</span>
+<div class="msg-content">
+preferably something newer</div>
+<div class="msg-content">
+as the older we get the not as long it will last before issues</div>
+<div class="msg-content">
+however if stuff has the most options</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">08-Dec-17 06:23 PM</span>
+<div class="msg-content">
+im thinking 1.10 or 1.11</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">08-Dec-17 06:23 PM</span>
+<div class="msg-content">
+yer</div>
+<div class="msg-content">
+1.9 is just the death update of minecraft</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">08-Dec-17 06:23 PM</span>
+<div class="msg-content">
+both have very good mods</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">08-Dec-17 06:24 PM</span>
+<div class="msg-content">
+im going to put a ban on anything creepy ( as in reperdutcion or just nsfw stuff )</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">08-Dec-17 06:27 PM</span>
+<div class="msg-content">
+rip minecraft comes alive</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">08-Dec-17 06:27 PM</span>
+<div class="msg-content">
+basicly if it breaks our rules its not going on</div>
+<div class="msg-content">
+anything else it free game really</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">08-Dec-17 06:28 PM</span>
+<div class="msg-content">
+the makeing the chiled bit is has creepy as the animals breeding</div>
+<div class="msg-content">
+none of the detailed stuff</div>
+<div class="msg-content">
+just hearts</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">08-Dec-17 06:29 PM</span>
+<div class="msg-content">
+if its breeding like minecraft then sure. such as new mobs and such. any more detial and no</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">08-Dec-17 06:29 PM</span>
+<div class="msg-content">
+ya thats all it has</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">08-Dec-17 06:29 PM</span>
+<div class="msg-content">
+then thats okay</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">08-Dec-17 07:28 PM</span>
+<div class="msg-content">
+Oh shit me this is here now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">08-Dec-17 07:28 PM</span>
+<div class="msg-content">
+yep</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">20-Dec-17 03:11 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/388755902720901130/393057748817936385/mods_1.JPG">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/388755902720901130/393057748817936385/mods_1.JPG" />
+</a>
+</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/388755902720901130/393057763044884482/mods_2.JPG">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/388755902720901130/393057763044884482/mods_2.JPG" />
+</a>
+</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/388755902720901130/393057778492637194/mods_3.JPG">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/388755902720901130/393057778492637194/mods_3.JPG" />
+</a>
+</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/388755902720901130/393057791545442315/mods_4.JPG">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/388755902720901130/393057791545442315/mods_4.JPG" />
+</a>
+</div>
+<div class="msg-content">
+all the mods so far</div>
+<div class="msg-content">
+btw build craft will be on just have to find it first</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">15-Feb-18 08:56 PM</span>
+<div class="msg-content">
+So when is this server actually being made?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">15-Feb-18 10:25 PM</span>
+<div class="msg-content">
+probs sunday</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">06-Mar-18 01:51 PM</span>
+<div class="msg-content">
+Saturday be there or be square <span class="mention">@everyone</span><span class="msg-edited" title="06-Mar-18 01:51 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">06-Mar-18 01:53 PM</span>
+<div class="msg-content">
+neat</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/c1aadb5252117980bb938d5db827634e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">06-Mar-18 02:03 PM</span>
+<div class="msg-content">
+Round, thanks</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">06-Mar-18 02:04 PM</span>
+<div class="msg-content">
+Octahedron</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/c1aadb5252117980bb938d5db827634e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">06-Mar-18 02:14 PM</span>
+<div class="msg-content">
+Polygonal</div>
+<div class="msg-content">
+Pneumonoultramicroscopicsilicovolcanoconiosis</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">06-Mar-18 02:16 PM</span>
+<div class="msg-content">
+&amp; Knuckles</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/c1aadb5252117980bb938d5db827634e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">06-Mar-18 02:34 PM</span>
+<div class="msg-content">
+Sure</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">06-Mar-18 06:14 PM</span>
+<div class="msg-content">
+why has this chat got a lock on it but everyone can see it?<span class="msg-edited" title="06-Mar-18 06:15 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">06-Mar-18 06:15 PM</span>
+<div class="msg-content">
+no idea</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/c1aadb5252117980bb938d5db827634e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">06-Mar-18 06:15 PM</span>
+<div class="msg-content">
+Did we only lockout the newcomers?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/e9eb287b8826416b31d87eff20247ac4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">06-Mar-18 06:15 PM</span>
+<div class="msg-content">
+apparently the everyone role cannot read</div>
+<div class="msg-content">
+but every other role can almost</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/c1aadb5252117980bb938d5db827634e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">06-Mar-18 06:15 PM</span>
+<div class="msg-content">
+Oh... I see</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">09-Mar-18 09:03 PM</span>
+<div class="msg-content">
+we live for da test yall</div>
+<div class="msg-content">
+get on vc</div>
+<div class="msg-content">
+109.157.217.49</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">19-Mar-18 06:23 PM</span>
+<div class="msg-content">
+WHEN IS THIS HAPPENING</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/a4bf1a8388d8a60e571c025ea14b4a20.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dutch#5665">Dutch</span>
+<span class="msg-date">19-Mar-18 06:36 PM</span>
+<div class="msg-content">
+WHEN IS THIS HAPPENING</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">19-Mar-18 06:46 PM</span>
+<div class="msg-content">
+it happens when it happens</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">19-Mar-18 06:46 PM</span>
+<div class="msg-content">
+WHEN IS THIS HAPPENING</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/f95f735e644a9d1c1c76c74a802eafca.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#4639">magPlex</span>
+<span class="msg-date">19-Mar-18 06:48 PM</span>
+<div class="msg-content">
+█░░░█ █░░█ █▀▀ █▀▀▄   ░▀░ █▀▀   ▀▀█▀▀ █░░█ ░▀░ █▀▀   █░░█ █▀▀█ █▀▀█ █▀▀█ █▀▀ █▀▀▄ ░▀░ █▀▀▄ █▀▀▀<br />█▄█▄█ █▀▀█ █▀▀ █░░█   ▀█▀ ▀▀█   ░░█░░ █▀▀█ ▀█▀ ▀▀█   █▀▀█ █▄▄█ █░░█ █░░█ █▀▀ █░░█ ▀█▀ █░░█ █░▀█<br />░▀░▀░ ▀░░▀ ▀▀▀ ▀░░▀   ▀▀▀ ▀▀▀   ░░▀░░ ▀░░▀ ▀▀▀ ▀▀▀   ▀░░▀ ▀░░▀ █▀▀▀ █▀▀▀ ▀▀▀ ▀░░▀ ▀▀▀ ▀░░▀ ▀▀▀▀</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/01317b2a66aa96edbe067804cb5f0714.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip In The FranXX#6594">Pip In The FranXX</span>
+<span class="msg-date">19-Mar-18 06:48 PM</span>
+<div class="msg-content">
+brail</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/74b4b9f2b49359e4f226b79ea8a0b030.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">05-Apr-18 12:23 PM</span>
+<div class="msg-content">
+NO</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/8c72dfbb1d5c3e4481d32f9682fa6297.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Black Radio#2639">Black Radio</span>
+<span class="msg-date">23-Jun-18 05:15 PM</span>
+<div class="msg-content">
+this thing</div>
+<div class="msg-content">
+<span class="mention" title="Toby Echozap#3346">@Toby Echozap</span></div>
+</div>
+</div>
+</div>
+</body>
+</html>

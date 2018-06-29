@@ -1,0 +1,2262 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gameroom server of friends - non-steam-gaming</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/269812107355226122/f4e087089f5567c4a815e983ef7e62a5.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Gameroom server of friends</div>
+<div class="channel-name">non-steam-gaming</div>
+<div class="misc">248 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/270241823677612041/766468c417c5b5335e2ad41fbcdec41c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DihydrogenMonoxide#3317">DihydrogenMonoxide</span>
+<span class="msg-date">24-Jan-17 05:51 PM</span>
+<div class="msg-content">
+cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Jan-17 05:52 PM</span>
+<div class="msg-content">
+so any not main games ( e.g. roblox unturned est ) go here</div>
+<div class="msg-content">
+if a game becomes main it can have its own channel</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/270241823677612041/766468c417c5b5335e2ad41fbcdec41c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DihydrogenMonoxide#3317">DihydrogenMonoxide</span>
+<span class="msg-date">24-Jan-17 05:54 PM</span>
+<div class="msg-content">
+yep</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-17 09:58 PM</span>
+<div class="msg-content">
+maybe have a player count logged down somewhere</div>
+<div class="msg-content">
+if game has more then 5-10 players or something(depends on how big the server)</div>
+<div class="msg-content">
+make a channel</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Jan-17 10:14 PM</span>
+<div class="msg-content">
+you can pin messages it seems(top right with someone with manage messages permission)</div>
+<div class="msg-content">
+you can use this to store the people who play the game or something</div>
+<div class="msg-content">
+Roblox: anybody but not really popular<br />Unturned: Free Game, Liam &amp; George<br />Rocket League: Darryl, Liam, George<br />Elite Dangerous: Liam, Bramwell</div>
+<div class="msg-content">
+those are ones i can think of</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">25-Jan-17 04:29 PM</span>
+<div class="msg-content">
+ya</div>
+<div class="msg-content">
+unturned i could see getting bigger</div>
+<div class="msg-content">
+i know bramwell and jayke have it</div>
+<div class="msg-content">
+im thinking more if we play it more offend</div>
+<div class="msg-content">
+so if it becomes a main game then it gets a channel</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/259999045165121536/348d2f5c987227a8da51d36bfadf4621.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Speedybolt#9027">Speedybolt</span>
+<span class="msg-date">31-Jan-17 09:35 PM</span>
+<div class="msg-content">
+Showing off with the vr headshot again &#128523;</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/273510065494032385/276103136379142155/20170131212906_1_vr.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/273510065494032385/276103136379142155/20170131212906_1_vr.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">05-Jul-17 08:29 PM</span>
+<div class="msg-content">
+Its Kronk. Thanks Noah.</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/273510065494032385/332241474773057536/Kronk_1.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/273510065494032385/332241474773057536/Kronk_1.png" />
+</a>
+</div>
+<div class="msg-content">
+Orginal</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/273510065494032385/332241622832119818/latest.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/273510065494032385/332241622832119818/latest.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/270241823677612041/766468c417c5b5335e2ad41fbcdec41c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DihydrogenMonoxide#3317">DihydrogenMonoxide</span>
+<span class="msg-date">07-Aug-17 07:27 PM</span>
+<div class="msg-content">
+who has Elite Dangerous?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">07-Aug-17 07:28 PM</span>
+<div class="msg-content">
+?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">08-Aug-17 05:53 PM</span>
+<div class="msg-content">
+terrira can now be talked about in here</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">08-Aug-17 05:53 PM</span>
+<div class="msg-content">
+the misc chat</div>
+<div class="msg-content">
+oh the chats gone</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">08-Aug-17 05:53 PM</span>
+<div class="msg-content">
+misc games ( anything that dosent have its own channel )</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">08-Aug-17 05:54 PM</span>
+<div class="msg-content">
+allright</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">22-Sep-17 07:57 AM</span>
+<div class="msg-content">
+<a href="https://www.humblebundle.com/store/outlast-deluxe">https://www.humblebundle.com/store/outlast-deluxe</a></div>
+<div class="msg-content">
+tis free</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">30-Sep-17 05:52 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> the original fallout is free on steam</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">30-Sep-17 05:52 PM</span>
+<div class="msg-content">
+Cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">30-Sep-17 05:52 PM</span>
+<div class="msg-content">
+okay</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/35e29605968ed8c3fd55e9e0ea0957b3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#128174; Dutch &#128174;#5665">&#128174; Dutch &#128174;</span>
+<span class="msg-date">30-Sep-17 06:18 PM</span>
+<div class="msg-content">
+<span class="mention" title="Inteon#7976">@Inteon</span>  i already have it you bonce</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">30-Sep-17 06:20 PM</span>
+<div class="msg-content">
+dont see it anywhere</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/9afa9a532fe6db9f8526ef1b5c4f49ac.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">30-Sep-17 08:27 PM</span>
+<div class="msg-content">
+Oh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">30-Sep-17 08:27 PM</span>
+<div class="msg-content">
+omg its chris talking on here &#128558;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/9afa9a532fe6db9f8526ef1b5c4f49ac.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">30-Sep-17 08:27 PM</span>
+<div class="msg-content">
+Noooo...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">02-Oct-17 06:09 PM</span>
+<div class="msg-content">
+<span class="mention" title="magPlex#1712">@magPlex</span>  AWESOME game you are playing there :D:D:D:D</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">02-Oct-17 06:11 PM</span>
+<div class="msg-content">
+Hell yeah!</div>
+<div class="msg-content">
+Gotta play those sick anime tunes.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">03-Oct-17 07:30 PM</span>
+<div class="msg-content">
+Lydia died in my game. Her remains were burnt at the Paid Mods War Memoral.</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/273510065494032385/364841733508431902/20171003192548_1.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/273510065494032385/364841733508431902/20171003192548_1.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">03-Oct-17 07:30 PM</span>
+<div class="msg-content">
+okay</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">03-Oct-17 07:31 PM</span>
+<div class="msg-content">
+And yea theres a Paid Mods War memoreal</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/6f26b6c64d9a0e4c71b5566f9d50740b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip in the FranXX#6594">Pip in the FranXX</span>
+<span class="msg-date">03-Oct-17 07:31 PM</span>
+<div class="msg-content">
+get meko</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">03-Oct-17 07:31 PM</span>
+<div class="msg-content">
+Star wars music was playing for some reason when I went near it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/6f26b6c64d9a0e4c71b5566f9d50740b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip in the FranXX#6594">Pip in the FranXX</span>
+<span class="msg-date">03-Oct-17 07:31 PM</span>
+<div class="msg-content">
+fill the void with dogs</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">03-Oct-17 07:31 PM</span>
+<div class="msg-content">
+I got a dog</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/273510065494032385/364842071120543744/20170530232935_1.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/273510065494032385/364842071120543744/20170530232935_1.jpg" />
+</a>
+</div>
+<div class="msg-content">
+He has an arow in his head but he&#39;s good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/6f26b6c64d9a0e4c71b5566f9d50740b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip in the FranXX#6594">Pip in the FranXX</span>
+<span class="msg-date">03-Oct-17 07:34 PM</span>
+<div class="msg-content">
+thats why hes following you</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">03-Oct-17 07:34 PM</span>
+<div class="msg-content">
+?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/6f26b6c64d9a0e4c71b5566f9d50740b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip in the FranXX#6594">Pip in the FranXX</span>
+<span class="msg-date">03-Oct-17 07:34 PM</span>
+<div class="msg-content">
+because he has a arow in his head</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">03-Oct-17 07:35 PM</span>
+<div class="msg-content">
+He doesint allways have an arrow in his head</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">06-Oct-17 11:48 AM</span>
+<div class="msg-content">
+how many people have the original battlefront 2</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">06-Oct-17 11:49 AM</span>
+<div class="msg-content">
+nope</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">06-Oct-17 11:49 AM</span>
+<div class="msg-content">
+because we could organize a game between quite a few of us</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">06-Oct-17 11:49 AM</span>
+<div class="msg-content">
+i know jayke does</div>
+<div class="msg-content">
+im gonna be playing the new one. it looks actualy fairly good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">06-Oct-17 11:50 AM</span>
+<div class="msg-content">
+p2w though</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">10-Oct-17 10:06 PM</span>
+<div class="msg-content">
+<a href="http://store.steampowered.com/app/674940/Stick">http://store.steampowered.com/app/674940/Stick</a><i>Fight</i>The_Game/<br />You should really get this game, I had a blast on it and its like a 2d gang beasts with guns, go get it its only &#163;4<br />Edit: And snakes. Lots and lots of snakes.<span class="msg-edited" title="10-Oct-17 10:08 PM">(edited)</span></div>
+<div class="msg-content">
+It could actually be the next game we play with each other</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">10-Oct-17 10:10 PM</span>
+<div class="msg-content">
+I would like to</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">10-Oct-17 10:20 PM</span>
+<div class="msg-content">
+It&#39;s great</div>
+<div class="msg-content">
+would be better if we all played it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">10-Oct-17 10:20 PM</span>
+<div class="msg-content">
+agreed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">15-Oct-17 03:45 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> this is a really cool feature</div>
+<div class="msg-content">
+does anyone have surgeon simulator</div>
+<div class="msg-content">
+in reception</div>
+<div class="msg-content">
+if you put your phone number into the phone</div>
+<div class="msg-content">
+and then call</div>
+<div class="msg-content">
+it calls your IRL phone</div>
+<div class="msg-content">
+it actually works</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">15-Oct-17 03:46 PM</span>
+<div class="msg-content">
+Woah, what??</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">15-Oct-17 03:46 PM</span>
+<div class="msg-content">
+ikr</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">15-Oct-17 03:46 PM</span>
+<div class="msg-content">
+That&#39;s pretty damn cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">15-Oct-17 03:48 PM</span>
+<div class="msg-content">
+<a href="http://asset-1.soupcdn.com/asset/13794/8806_1c9a.jpeg">http://asset-1.soupcdn.com/asset/13794/8806_1c9a.jpeg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">15-Oct-17 03:48 PM</span>
+<div class="msg-content">
+cant see it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">15-Oct-17 03:48 PM</span>
+<div class="msg-content">
+basically developers were asked what was hidden in their games</div>
+<div class="msg-content">
+click on it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">15-Oct-17 03:48 PM</span>
+<div class="msg-content">
+It&#39;s better on mobile.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">15-Oct-17 03:48 PM</span>
+<div class="msg-content">
+as in go onto your webbrowser with it</div>
+<div class="msg-content">
+magPlex do you have a phone number so i can try it on you &#128539;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">15-Oct-17 03:49 PM</span>
+<div class="msg-content">
+I do but i dont exactly wanna give it a shot</div>
+<div class="msg-content">
+Sorry</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">15-Oct-17 03:49 PM</span>
+<div class="msg-content">
+no problem</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">15-Oct-17 03:52 PM</span>
+<div class="msg-content">
+ok the last one is scary</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">15-Oct-17 03:52 PM</span>
+<div class="msg-content">
+indeed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">15-Oct-17 03:55 PM</span>
+<div class="msg-content">
+it was to do with the ARG</div>
+<div class="msg-content">
+to unlock the alien missions</div>
+<div class="msg-content">
+it gives you a binary code</div>
+<div class="msg-content">
+<a href="http://surgeon-simulator-2013.wikia.com/wiki/Enter">http://surgeon-simulator-2013.wikia.com/wiki/Enter</a><i>The</i>Code</div>
+<div class="msg-content">
+under the trivia bit</div>
+<div class="msg-content">
+number 3</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">19-Oct-17 09:59 PM</span>
+<div class="msg-content">
+cuphead is ez</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">20-Oct-17 11:49 AM</span>
+<div class="msg-content">
+Installed it last night. Having fun so far.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">27-Oct-17 03:14 PM</span>
+<div class="msg-content">
+Overwatch is a decent game</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">27-Oct-17 04:20 PM</span>
+<div class="msg-content">
+so is Destiny 2</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">28-Oct-17 02:09 AM</span>
+<div class="msg-content">
+Bought Mario Odyssey last night. It&#39;s installed but I&#39;m waiting till the morning to play on the TV.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">29-Oct-17 11:17 AM</span>
+<div class="msg-content">
+first promotion yay ᕕ( ᐛ )ᕗ</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/273510065494032385/374154893172277250/Overwatch_2017-10-29_11-09-25.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/273510065494032385/374154893172277250/Overwatch_2017-10-29_11-09-25.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">29-Oct-17 11:42 AM</span>
+<div class="msg-content">
+whats that on?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">29-Oct-17 12:14 PM</span>
+<div class="msg-content">
+overwatch</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">29-Oct-17 12:15 PM</span>
+<div class="msg-content">
+nice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">03-Nov-17 06:17 PM</span>
+<div class="msg-content">
+starcraft 2 will be f2p on nov 14th (watching blizzcon right now)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">03-Nov-17 07:35 PM</span>
+<div class="msg-content">
+hots is getting a really good update</div>
+<div class="msg-content">
+tons of changes</div>
+<div class="msg-content">
+sc2 will have ladder for free, WOL campaign for free (Heart of the swarm and LOTV will still cost for campaign)</div>
+<div class="msg-content">
+coop commanders free until lvl 5 except the 3 basic ones</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">04-Nov-17 05:32 PM</span>
+<div class="msg-content">
+just found out that you could have a pet rabbit on skyrim. im now going to invest another 100 hours into this</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">06-Nov-17 11:51 AM</span>
+<div class="msg-content">
+When should we have this civ game? Today, maybe?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">09-Nov-17 07:47 PM</span>
+<div class="msg-content">
+Guys, I have an important announcement to make</div>
+<div class="msg-content">
+People are gonna want to hear this</div>
+<div class="msg-content">
+I</div>
+<div class="msg-content">
+Have</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">09-Nov-17 07:47 PM</span>
+<div class="msg-content">
+aids</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">09-Nov-17 07:47 PM</span>
+<div class="msg-content">
+Bought Elder Scrolls Online</div>
+<div class="msg-content">
+I&#39;m currently installing it now</div>
+<div class="msg-content">
+8 fking hours</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">09-Nov-17 07:48 PM</span>
+<div class="msg-content">
+yup</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">09-Nov-17 07:48 PM</span>
+<div class="msg-content">
+but that&#39;s ok</div>
+<div class="msg-content">
+I&#39;ve got homework to do</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">12-Nov-17 06:08 PM</span>
+<div class="msg-content">
+<a href="http://www.pretendyoure.xyz/zy/">http://www.pretendyoure.xyz/zy/</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">12-Nov-17 06:10 PM</span>
+<div class="msg-content">
+anita</div>
+<div class="msg-content">
+<a href="https://pyx-1.pretendyoure.xyz/zy/game.jsp#game=76">https://pyx-1.pretendyoure.xyz/zy/game.jsp#game=76</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">12-Nov-17 06:11 PM</span>
+<div class="msg-content">
+autism</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">13-Nov-17 11:30 AM</span>
+<div class="msg-content">
+just going to paste my messages here</div>
+<div class="msg-content">
+11:24 - Inteon: ea reply to thread on reddit<br />11:25 - Inteon: someone complaining about it being $80 to unlock vader<br />11:25 - Inteon: top comment<br />11:25 - Inteon: “Can’t divide a community if there is no community”<br />11:25 - Inteon: ea replied<br />11:25 - Inteon: The intent is to provide players with a sense of pride and accomplishment for unlocking different heroes.<br />As for cost, we selected initial values based upon data from the Open Beta and other adjustments made to milestone rewards before launch. Among other things, we&#39;re looking at average per-player credit earn rates on a daily basis, and we&#39;ll be making constant adjustments to ensure that players have challenges that are compelling, rewarding, and of course attainable via gameplay.<br />We appreciate the candid feedback, and the passion the community has put forth around the current topics here on Reddit, our forums and across numerous social media outlets.<br />Our team will continue to make changes and monitor community feedback and update everyone as soon and as often as we can.<br />11:25 - Inteon: it is now<br />11:25 - Inteon: the most downvoted reddit comment<br />11:25 - Inteon: in history<br />11:25 - Inteon: with -170k<br />11:25 - Inteon: in 16 hours<br />11:25 - Inteon: 16 HOURS</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">13-Nov-17 02:33 PM</span>
+<div class="msg-content">
+<span class="mention" title="whitstableboy#8524">@whitstableboy</span> here</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">13-Nov-17 04:20 PM</span>
+<div class="msg-content">
+?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">13-Nov-17 04:21 PM</span>
+<div class="msg-content">
+basicly talk about battlefront 2</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">13-Nov-17 04:21 PM</span>
+<div class="msg-content">
+Oh.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">18-Nov-17 12:15 AM</span>
+<div class="msg-content">
+❤ <a href="http://steamcommunity.com/sharedfiles/filedetails/?id=683024111">http://steamcommunity.com/sharedfiles/filedetails/?id=683024111</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/6f26b6c64d9a0e4c71b5566f9d50740b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip in the FranXX#6594">Pip in the FranXX</span>
+<span class="msg-date">23-Nov-17 07:02 PM</span>
+<div class="msg-content">
+so who wants to play duck game</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">24-Nov-17 12:15 AM</span>
+<div class="msg-content">
+just posted a review about stick fight: the game on steam</div>
+<div class="msg-content">
+<a href="http://steamcommunity.com/id/PotatoArmy4Lyfe/recommended/674940/">http://steamcommunity.com/id/PotatoArmy4Lyfe/recommended/674940/</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Nov-17 06:03 PM</span>
+<div class="msg-content">
+<a href="https://imgur.com/gallery/1emoM">https://imgur.com/gallery/1emoM</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Nov-17 06:04 PM</span>
+<div class="msg-content">
+lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">24-Nov-17 06:04 PM</span>
+<div class="msg-content">
+HAHA</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Nov-17 06:04 PM</span>
+<div class="msg-content">
+poor game</div>
+<div class="msg-content">
+there are vastly more games that are worse than it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">24-Nov-17 06:04 PM</span>
+<div class="msg-content">
+yea but they aren&#39;t $60 and tried to offer microtransactions</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Nov-17 06:05 PM</span>
+<div class="msg-content">
+i bet there are some</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">25-Nov-17 02:56 PM</span>
+<div class="msg-content">
+Civ 6 is on sale. &#163;25.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">25-Nov-17 02:56 PM</span>
+<div class="msg-content">
+wow</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">02-Dec-17 05:14 PM</span>
+<div class="msg-content">
+I think i&#39;ve gotten to that point where i am too powerful to bother collecting loot. &#128534;</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/273510065494032385/386565880521162753/20171202161921_1.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/273510065494032385/386565880521162753/20171202161921_1.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">02-Dec-17 05:47 PM</span>
+<div class="msg-content">
+I never use the potions which increase health, stamina and magicka I find them useless tbh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">02-Dec-17 05:48 PM</span>
+<div class="msg-content">
+At the bottem are the normal heath potions</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">02-Dec-17 05:58 PM</span>
+<div class="msg-content">
+ye</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">02-Dec-17 10:11 PM</span>
+<div class="msg-content">
+Long ago, in a time before the wall of Mexico and before the first dark skin President. There was a boy who played many games. He played Harry potter and the philosophers stone a game known for its difficult boss. He played The Elder Scrolls IV Oblivion and destroyed many a foe on max difficulty.<br />But there was one game that he said “Screw dat shit!” This was ten years ago and now he must return and fight again in the most annoying game he had ever played!</div>
+<div class="msg-content">
+This game was The Incredibles when danger calls</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/273510065494032385/386640733207134219/515D60T38PL.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/273510065494032385/386640733207134219/515D60T38PL.png" />
+</a>
+</div>
+<div class="msg-content">
+And it wasint made by EA</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">02-Dec-17 10:51 PM</span>
+<div class="msg-content">
+Has anyone ever noticed how fucking skinny Violets legs are</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">02-Dec-17 10:52 PM</span>
+<div class="msg-content">
+Tim burton level</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">02-Dec-17 11:02 PM</span>
+<div class="msg-content">
+Yea</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">04-Dec-17 07:55 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/NUX9wXhOlQg">https://youtu.be/NUX9wXhOlQg</a></div>
+<div class="msg-content">
+HOLY SHIT</div>
+<div class="msg-content">
+HE ISNT DEAD</div>
+<div class="msg-content">
+HES</div>
+<div class="msg-content">
+NOT</div>
+<div class="msg-content">
+DEAD</div>
+<div class="msg-content">
+<i><b>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</b></i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">04-Dec-17 07:56 PM</span>
+<div class="msg-content">
+hes back</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">04-Dec-17 07:56 PM</span>
+<div class="msg-content">
+YES</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">04-Dec-17 08:25 PM</span>
+<div class="msg-content">
+!!!!!!!!!!! YESSSSSSSSSS</div>
+<div class="msg-content">
+YES</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">04-Dec-17 08:25 PM</span>
+<div class="msg-content">
+laim is hapy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">04-Dec-17 08:28 PM</span>
+<div class="msg-content">
+ME TOO</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/35e29605968ed8c3fd55e9e0ea0957b3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#128174; Dutch &#128174;#5665">&#128174; Dutch &#128174;</span>
+<span class="msg-date">05-Dec-17 04:35 PM</span>
+<div class="msg-content">
+&#127474;&#127478;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/272496312115527680/4c7e2f6f6cf2aa7cad8b269f605ee9f4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Illra#4008">Illra</span>
+<span class="msg-date">05-Dec-17 05:49 PM</span>
+<div class="msg-content">
+<i>Skoooooooommmmmaaaaaa</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">06-Dec-17 06:36 PM</span>
+<div class="msg-content">
+warframe is a confusing (albeit good) game<span class="msg-edited" title="06-Dec-17 06:36 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/272496312115527680/4c7e2f6f6cf2aa7cad8b269f605ee9f4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Illra#4008">Illra</span>
+<span class="msg-date">24-Dec-17 02:57 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span>  Does anyone have fortnite if so wanna play?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Dec-17 02:57 PM</span>
+<div class="msg-content">
+nah dont have that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/9afa9a532fe6db9f8526ef1b5c4f49ac.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">24-Dec-17 03:01 PM</span>
+<div class="msg-content">
+Only on Xbox</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">24-Dec-17 03:02 PM</span>
+<div class="msg-content">
+never heard of it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/9afa9a532fe6db9f8526ef1b5c4f49ac.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">24-Dec-17 03:03 PM</span>
+<div class="msg-content">
+Its PubG drawn differently</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">24-Dec-17 03:03 PM</span>
+<div class="msg-content">
+PubG?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/9afa9a532fe6db9f8526ef1b5c4f49ac.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">24-Dec-17 03:03 PM</span>
+<div class="msg-content">
+Players Unknown Battlegrounds</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">24-Dec-17 03:03 PM</span>
+<div class="msg-content">
+never heard of that either</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">24-Dec-17 03:03 PM</span>
+<div class="msg-content">
+i have</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/9afa9a532fe6db9f8526ef1b5c4f49ac.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">24-Dec-17 03:04 PM</span>
+<div class="msg-content">
+It&#39;s an okay game. By far not the best but also by far not the worst</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">24-Dec-17 03:07 PM</span>
+<div class="msg-content">
+huh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/272496312115527680/4c7e2f6f6cf2aa7cad8b269f605ee9f4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Illra#4008">Illra</span>
+<span class="msg-date">24-Dec-17 03:11 PM</span>
+<div class="msg-content">
+it&#39;s not only for xbox its on pc as well</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">24-Dec-17 06:19 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/273510065494032385/394554675703185409/unknown.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/273510065494032385/394554675703185409/unknown.png" />
+</a>
+</div>
+<div class="msg-content">
+looky this shit</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">31-Dec-17 10:48 PM</span>
+<div class="msg-content">
+<span class="mention" title="DoIlikeyou#1024">@DoIlikeyou</span> <span class="mention" title="Illra#4008">@Illra</span> <span class="mention" title="Pip in the FranXX#6594">@Pip in the FranXX</span> ok I am creating a campaign for D&amp;D set in a place that we know well and would be best for our first game. Skyrim. i advice creating characters based around the ten main races  with no deadric influence (No Lycanph or Vamps) and none of the other rare races even if they are in tamriel. As for classes go for D&amp;D Fifth Edidtion.</div>
+<div class="msg-content">
+If any other&#39;s that have Table top Sim would like to join go ahead</div>
+<div class="msg-content">
+Also if you have some trouble with putting race bonus into the sheets dont worry I&#39;ll add that later</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">31-Dec-17 11:57 PM</span>
+<div class="msg-content">
+ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/6f26b6c64d9a0e4c71b5566f9d50740b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip in the FranXX#6594">Pip in the FranXX</span>
+<span class="msg-date">02-Jan-18 09:37 PM</span>
+<div class="msg-content">
+IVE BEEN TRICKED</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">02-Jan-18 09:37 PM</span>
+<div class="msg-content">
+?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/6f26b6c64d9a0e4c71b5566f9d50740b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip in the FranXX#6594">Pip in the FranXX</span>
+<span class="msg-date">02-Jan-18 09:38 PM</span>
+<div class="msg-content">
+FUCKING TRAPS MAN</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">02-Jan-18 09:38 PM</span>
+<div class="msg-content">
+?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/6f26b6c64d9a0e4c71b5566f9d50740b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip in the FranXX#6594">Pip in the FranXX</span>
+<span class="msg-date">02-Jan-18 09:38 PM</span>
+<div class="msg-content">
+ill tell you tomorrow</div>
+<div class="msg-content">
+yyou need to see it to belive it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">02-Jan-18 09:41 PM</span>
+<div class="msg-content">
+Fuck</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">02-Jan-18 11:52 PM</span>
+<div class="msg-content">
+Wdf</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">11-Jan-18 09:55 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=-OUXr4s3KH8">https://www.youtube.com/watch?v=-OUXr4s3KH8</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">11-Jan-18 09:58 PM</span>
+<div class="msg-content">
+Yeah BOY</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/9afa9a532fe6db9f8526ef1b5c4f49ac.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">11-Jan-18 10:07 PM</span>
+<div class="msg-content">
+The original?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">11-Jan-18 10:09 PM</span>
+<div class="msg-content">
+yea original + DLC<span class="msg-edited" title="11-Jan-18 10:09 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/35e29605968ed8c3fd55e9e0ea0957b3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#128174; Dutch &#128174;#5665">&#128174; Dutch &#128174;</span>
+<span class="msg-date">11-Jan-18 10:10 PM</span>
+<div class="msg-content">
+&#128076;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/9afa9a532fe6db9f8526ef1b5c4f49ac.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">11-Jan-18 10:10 PM</span>
+<div class="msg-content">
+YAAAS! HARDCORE MURDER DEATH TIME!</div>
+<div class="msg-content">
+Totes buying that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">11-Jan-18 10:10 PM</span>
+<div class="msg-content">
+I want it now but it&#39;s coming in april</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/286824461598982144/9afa9a532fe6db9f8526ef1b5c4f49ac.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="The Solo Rolo#3892">The Solo Rolo</span>
+<span class="msg-date">11-Jan-18 10:11 PM</span>
+<div class="msg-content">
+I can wait... I can... I can&#39;t...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">11-Jan-18 10:11 PM</span>
+<div class="msg-content">
+same</div>
+<div class="msg-content">
+(just hope they fix bed of chaos)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">12-Jan-18 01:19 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=bzJDimvPW1Y">https://www.youtube.com/watch?v=bzJDimvPW1Y</a></div>
+<div class="msg-content">
+in the spirit of dark souls</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/210303789016547328/35e29605968ed8c3fd55e9e0ea0957b3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#128174; Dutch &#128174;#5665">&#128174; Dutch &#128174;</span>
+<span class="msg-date">16-Jan-18 09:32 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/273510065494032385/402938069495447552/Amino">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/273510065494032385/402938069495447552/Amino" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/6f26b6c64d9a0e4c71b5566f9d50740b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip in the FranXX#6594">Pip in the FranXX</span>
+<span class="msg-date">17-Jan-18 06:44 PM</span>
+<div class="msg-content">
+<a href="https://skribbl.io/?tpsnVbwoQd6uFAXwU9Hl">https://skribbl.io/?tpsnVbwoQd6uFAXwU9Hl</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">17-Jan-18 06:44 PM</span>
+<div class="msg-content">
+thanks</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">18-Jan-18 12:57 PM</span>
+<div class="msg-content">
+Apparently stardew valley is getting a multiplayer component soon</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">18-Jan-18 06:12 PM</span>
+<div class="msg-content">
+Hell yeah</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">18-Jan-18 06:12 PM</span>
+<div class="msg-content">
+whos ready for this jelly</div>
+<div class="msg-content">
+<a href="http://skribbl.io/?TiNDCw7NXo6rBDRoWFVY">http://skribbl.io/?TiNDCw7NXo6rBDRoWFVY</a></div>
+<div class="msg-content">
+anyone whos intersted in joining fill free to</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">18-Jan-18 08:34 PM</span>
+<div class="msg-content">
+<a href="https://skribbl.io/?TiNDCw7NXo6rBDRoWFVY">https://skribbl.io/?TiNDCw7NXo6rBDRoWFVY</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">18-Jan-18 08:34 PM</span>
+<div class="msg-content">
+<a href="https://skribbl.io/?TiNDCw7NXo6rBDRoWFVY">https://skribbl.io/?TiNDCw7NXo6rBDRoWFVY</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">18-Jan-18 08:35 PM</span>
+<div class="msg-content">
+<a href="https://skribbl.io/?TiNDCw7NXo6rBDRoWFVY">https://skribbl.io/?TiNDCw7NXo6rBDRoWFVY</a></div>
+<div class="msg-content">
+<a href="https://gartic.io/0443P">https://gartic.io/0443P</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/6f26b6c64d9a0e4c71b5566f9d50740b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip in the FranXX#6594">Pip in the FranXX</span>
+<span class="msg-date">18-Jan-18 08:45 PM</span>
+<div class="msg-content">
+<a href="https://bulbapedia.bulbagarden.net/wiki/List">https://bulbapedia.bulbagarden.net/wiki/List</a><i>of</i>Pok%C3%A9mon<i>by</i>Kanto<i>Pok%C3%A9dex</i>number</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/272496312115527680/4c7e2f6f6cf2aa7cad8b269f605ee9f4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Illra#4008">Illra</span>
+<span class="msg-date">18-Jan-18 08:58 PM</span>
+<div class="msg-content">
+<a href="https://elsword.koggames.com/">https://elsword.koggames.com/</a></div>
+<div class="msg-content">
+<span class="mention" title="Pip in the FranXX#6594">@Pip in the FranXX</span> Here&#39;s the link</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">19-Jan-18 06:54 PM</span>
+<div class="msg-content">
+not skibble</div>
+<div class="msg-content">
+ill do the bigger one</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">19-Jan-18 06:55 PM</span>
+<div class="msg-content">
+wot</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/240786457214582784/befbdd6b06e24ad99ace4cb628857bf1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toby Echozap#3346">Toby Echozap</span>
+<span class="msg-date">19-Jan-18 06:56 PM</span>
+<div class="msg-content">
+set it to max people</div>
+<div class="msg-content">
+and send me an invite</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">19-Jan-18 06:56 PM</span>
+<div class="msg-content">
+<a href="http://skribbl.io/?xVcZZQ1jQC94JGQqsKkr">http://skribbl.io/?xVcZZQ1jQC94JGQqsKkr</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">19-Jan-18 07:47 PM</span>
+<div class="msg-content">
+!suicide</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/292332326418120705/3bfca1f9ea21e5c8d9df46351aae22be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Rikka#1447">Rikka</span>
+<span class="msg-date">19-Jan-18 07:47 PM</span>
+<div class="msg-content">
+@shizukia i shall take thy request to suicide and commit sudoku</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/273510065494032385/403998858541268993/sudoku.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/273510065494032385/403998858541268993/sudoku.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">19-Jan-18 08:03 PM</span>
+<div class="msg-content">
+nice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">25-Jan-18 09:59 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=tXX1Ud807w8">https://www.youtube.com/watch?v=tXX1Ud807w8</a> I can&#39;t believe what I did (note this is an old channel that is only for uploading overwatch and maybe other random experimental things) also sorz for poor quality<span class="msg-edited" title="25-Jan-18 10:00 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/101733558753718272/91c19177e4b81315f46c17dddb3951ae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inteon#7976">Inteon</span>
+<span class="msg-date">26-Jan-18 11:52 PM</span>
+<div class="msg-content">
+<span class="mention" title="Cr1tical Knight#6440">@Cr1tical Knight</span> <a href="https://www.youtube.com/watch?v=bl-KnrqRwms">https://www.youtube.com/watch?v=bl-KnrqRwms</a></div>
+<div class="msg-content">
+wubwubwolf also uses a mouse</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">26-Jan-18 11:55 PM</span>
+<div class="msg-content">
+I&#39;ve seen him use a tablet</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293096300281593857/97b4a9eae1fe9230b9412a71a5a0ac51.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DoIlikeyou#1024">DoIlikeyou</span>
+<span class="msg-date">27-Jan-18 01:19 AM</span>
+<div class="msg-content">
+best thing ever<br /><a href="https://scratch.mit.edu/projects/108907249/">https://scratch.mit.edu/projects/108907249/</a><span class="msg-edited" title="27-Jan-18 01:19 AM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">28-Jan-18 07:44 PM</span>
+<div class="msg-content">
+recommend any OSU! beatsmaps?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">28-Jan-18 07:45 PM</span>
+<div class="msg-content">
+Brain Power</div>
+<div class="msg-content">
+I think thats the song title</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137630525509730304/1bd63ab9176541179e86af30c17ca7be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Cr1tical Knight#6440">Cr1tical Knight</span>
+<span class="msg-date">28-Jan-18 07:46 PM</span>
+<div class="msg-content">
+yea it is</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">28-Jan-18 07:48 PM</span>
+<div class="msg-content">
+Nice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/324268117683470337/abe37107c69a13ea9a3ed3d05f3f4843.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BlackRadio#2639">BlackRadio</span>
+<span class="msg-date">05-Feb-18 11:15 PM</span>
+<div class="msg-content">
+Noah Cheated at Yu-Gi-Oh and i am very salty about it. he lied about his card.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/321675881464463370/6f26b6c64d9a0e4c71b5566f9d50740b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Pip in the FranXX#6594">Pip in the FranXX</span>
+<span class="msg-date">06-Feb-18 11:28 AM</span>
+<div class="msg-content">
+should have red the card</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/208140382892982272/931b0155763127bfa748e58686288e81.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="magPlex#1712">magPlex</span>
+<span class="msg-date">06-Feb-18 12:29 PM</span>
+<div class="msg-content">
+&gt; card</div>
+<div class="msg-content">
+<i>triggered</i></div>
+<div class="msg-content">
+<a href="http://www.gameinformer.com/themes/blogs/generic/post.aspx?WeblogApp=news&amp;y=2018&amp;m=02&amp;d=05&amp;WeblogPostName=crash-bandicoot-ports-planned-for-switch-and-pc-in-2018&amp;GroupKeys=">http://www.gameinformer.com/themes/blogs/generic/post.aspx?WeblogApp=news&amp;y=2018&amp;m=02&amp;d=05&amp;WeblogPostName=crash-bandicoot-ports-planned-for-switch-and-pc-in-2018&amp;GroupKeys=</a></div>
+<div class="msg-content">
+<i>YEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</i></div>
+</div>
+</div>
+</div>
+</body>
+</html>
